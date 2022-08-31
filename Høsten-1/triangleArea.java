@@ -8,6 +8,6 @@ public class triangleArea {
         int a = input.nextInt();
         int b = input.nextInt();
 
-        System.out.println((a * b) / 2);
+        System.out.println((a * b) / 2.0);
     }
 }

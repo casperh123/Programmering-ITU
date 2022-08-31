@@ -7,6 +7,8 @@ public class repetitativeEcho{
 
         String output = input.nextLine();
 
+        input.close();
+
         for (int i = 0; i < 3 ; i++) {
             System.out.print(output + " "); 
         }

@@ -8,6 +8,8 @@ class quadrantSelection {
         int x = input.nextInt();
         int y = input.nextInt();
 
+        input.close();
+
         if (x < 0 && y > 0) {
             System.out.println(2);
         } else if (x < 0 && y < 0 ) {

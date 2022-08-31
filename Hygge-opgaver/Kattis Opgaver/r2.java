@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
-public class sumTwoInts {
+public class r2 {
     public static void main(String args[]) {
 
         Scanner input = new Scanner(System.in);
 
-        int a = input.nextInt();
-        int b = input.nextInt();
+        int r1 = input.nextInt();
+        int s = input.nextInt();
+        int r2 = 2*s-r1;
+
 
         input.close();
 
-        System.out.println(a + b);
+        System.out.println(r2);
 
     }
 }

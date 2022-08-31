@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class negativeTemperatures{
+public class jumboJavelin {
     public static void main(String args[]) {
 
         Scanner input = new Scanner(System.in);
 
         int dataPoints = input.nextInt();
-        int negativeTemperatures = 0;
+        int fuses = dataPoints - 1;
+        int cumulativeLength = 0 - fuses;
 
         for (int i = 0; i < dataPoints; i++) {
-            if (input.nextInt() < 0) {
-                negativeTemperatures++;
-            }
+            cumulativeLength += input.nextInt();
         }
 
-        System.out.println(negativeTemperatures);
+
+        System.out.println(cumulativeLength);
 
     }
 }

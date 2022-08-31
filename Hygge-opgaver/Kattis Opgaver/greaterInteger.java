@@ -8,6 +8,8 @@ public class greaterInteger {
         int a = input.nextInt();
         int b = input.nextInt();
 
+        input.close();
+
         System.out.println(a > b ? 1 : 0);
 
     }

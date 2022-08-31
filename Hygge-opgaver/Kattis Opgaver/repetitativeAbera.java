@@ -7,6 +7,8 @@ public class repetitativeAbera {
 
         int repetitions = input.nextInt();
 
+        input.close();
+
         for (int i = 1; i <= repetitions; i++)  {
             System.out.println(i + " Abracadabra");
         }
