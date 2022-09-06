@@ -9,6 +9,7 @@ public class FindingAnA {
         String[] charArray = unsanitisedInput.split("");
         boolean firstAFound = false;
 
+
         for (String indexedChar : charArray) {
 
             if (indexedChar.equals("a") && !firstAFound) {
