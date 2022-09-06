@@ -12,9 +12,9 @@ public class Vindmoelle {
         if (angleDifference <= 180) {
             System.out.println(slutPosition - startPosition != -180 ? slutPosition - startPosition : 180);
         } else if(angleDifference > 180 && startPosition > slutPosition) {
-            System.out.println(360 - startPosition + slutPosition);
+            System.out.println(startPosition + slutPosition - 360 );
         } else if(angleDifference > 180 && startPosition < slutPosition) {
             System.out.println(slutPosition - 360 - startPosition);
-        }
+        } 
     }
 }
