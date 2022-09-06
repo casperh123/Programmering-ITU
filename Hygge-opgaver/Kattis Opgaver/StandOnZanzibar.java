@@ -28,10 +28,6 @@ public class StandOnZanzibar {
 
                 index++;
             }
-
-            for (int year : yearArray) {
-                System.out.println("Index " + year);
-            }
             
             for(int yearIndex = 0; yearIndex < (yearArray.size() - 1); yearIndex++) {
 
@@ -39,16 +35,14 @@ public class StandOnZanzibar {
 
                     int leftOverTurtles = yearArray.get(yearIndex + 1) - yearArray.get(yearIndex) * 2;
 
-                    importetTurtles = leftOverTurtles;
-
-                    System.out.println(yearArray.get(yearIndex));
+                    importetTurtles += leftOverTurtles;
 
                 }
                 
                 
             }
 
-            System.out.println("Der er " + importetTurtles + " turtles");
+            System.out.println(importetTurtles);
 
         }
     }
