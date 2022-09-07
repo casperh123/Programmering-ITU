@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class nastyHacks {
+public class NastyHacks {
     public static void main(String args[]) {
 
         Scanner input = new Scanner(System.in);

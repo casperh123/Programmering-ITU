@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class repetitativeAbera {
+public class RepetitativeAbera {
     public static void main(String args[]) {
 
         Scanner input = new Scanner(System.in);
