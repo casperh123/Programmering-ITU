@@ -26,8 +26,8 @@ public class Zamka {
         int upperBound = input.nextInt();
         int digitSumComparator = input.nextInt();
 
-        int highestSum = 0;
         int lowestSum = 0;
+        int highestSum = 0;
 
         for (int i = upperBound; i >= lowerBound; i--) {
 
@@ -40,7 +40,7 @@ public class Zamka {
             }
         }
 
-        System.out.println(lowestSum > lowerBound ? lowestSum : lowerBound);
-        System.out.println(highestSum > lowerBound ? highestSum : lowerBound);
+        System.out.println(lowestSum >= lowerBound ? lowestSum : highestSum);
+        System.out.println(highestSum);
     }
 }

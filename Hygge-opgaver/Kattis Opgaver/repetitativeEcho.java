@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class repetitativeEcho{
+public class RepetitativeEcho{
     public static void main(String args[]) {
 
         Scanner input = new Scanner(System.in);

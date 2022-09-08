@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
 
 
 public class ReversedBinaryNumbers {
@@ -8,18 +7,16 @@ public class ReversedBinaryNumbers {
         
         Scanner input = new Scanner(System.in);
 
-        int numberToConvert = input.nextInt();
-        int convertetNumber = 0;
-        String[] binaryArray = [""];
+        Integer numberToConvert = input.nextInt();
+        String numberBinaryString = Integer.toBinaryString(numberToConvert);
+        String numberReversedBinaryString = "";
 
-        while(numberToConvert > 0) {
-            binaryArray[] = String.valueOf(numberToConvert % 2);
-            numberToConvert /= 2;
+
+        for(int i = (numberBinaryString.length() - 1); i >= 0; i--) {
+            numberReversedBinaryString += numberBinaryString.charAt(i);
         }
-        
-        for(int number : binaryNumber) {
-            System.out.print(number);
-        }
+
+        System.out.println(Integer.parseInt(numberReversedBinaryString, 2));
 
     }
 }

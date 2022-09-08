@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pot {
+public class Pot {
     public static void main(String args[]) {
 
         Scanner input = new Scanner(System.in);
