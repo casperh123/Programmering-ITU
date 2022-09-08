@@ -5,8 +5,12 @@ public class Oddities {
         
         Scanner input = new Scanner(System.in);
 
-        int inputTal = input.nextInt();
+        int testCases = input.nextInt();
         
-        System.out.println(inputTal % 2 == 0 ? inputTal + " is even" : inputTal + " is odd");
+        for(int i = 0; i < testCases; i++) {
+            int inputTal = input.nextInt();
+            System.out.println(inputTal % 2 == 0 ? inputTal + " is even" : inputTal + " is odd");
+        }
+
     }
 }
