@@ -7,20 +7,14 @@ public class Vindmoelle {
 
         int startPosition = input.nextInt();
         int slutPosition = input.nextInt();
-        int angleDifference;
-
-        if(startPosition > slutPosition) {
-            angleDifference = startPosition - slutPosition;
-        } else {
-            angleDifference = slutPosition - startPosition;
-        }
+        int angleDifference = startPosition > slutPosition ? startPosition - slutPosition : slutPosition - startPosition;
 
         if (angleDifference <= 180) {
             System.out.println(slutPosition - startPosition != -180 ? slutPosition - startPosition : 180);
         } else if(angleDifference > 180 && startPosition > slutPosition) {
-            System.out.println(startPosition + slutPosition - 360 );
+            System.out.println(360 - startPosition + slutPosition);
         } else if(angleDifference > 180 && startPosition < slutPosition) {
             System.out.println(slutPosition - 360 - startPosition);
-        } 
+        }
     }
 }

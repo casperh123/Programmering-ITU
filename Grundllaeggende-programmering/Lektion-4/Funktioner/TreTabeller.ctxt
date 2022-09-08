@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TreTabeller
+comment1.params=
+comment1.target=void\ fireTabel()
+comment2.params=
+comment2.target=void\ syvTabel()
+comment3.params=
+comment3.target=void\ niTabel()
+comment4.params=
+comment4.target=void\ tabeller()
+comment5.params=tabel\ antalGentagelser
+comment5.target=void\ outputTabel(int,\ int)
+numComments=6

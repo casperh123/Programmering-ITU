@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=HvorMegetVand
+comment1.params=weight\ extraModifier
+comment1.target=double\ water(double,\ double)
+comment2.params=
+comment2.target=void\ kaldWater()
+numComments=3
