@@ -7,7 +7,13 @@ public class Vindmoelle {
 
         int startPosition = input.nextInt();
         int slutPosition = input.nextInt();
-        int angleDifference = startPosition > slutPosition ? startPosition - slutPosition : slutPosition - startPosition;
+        int angleDifference;
+
+        if(startPosition > slutPosition) {
+            angleDifference = startPosition - slutPosition;
+        } else {
+            angleDifference = slutPosition - startPosition;
+        }
 
         if (angleDifference <= 180) {
             System.out.println(slutPosition - startPosition != -180 ? slutPosition - startPosition : 180);
