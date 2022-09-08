@@ -6,6 +6,12 @@ public class Nsum {
         Scanner input = new Scanner(System.in);
 
         int testCases = input.nextInt();
-        int 
+        int sum = 0;
+
+        for (int i = 0; i < testCases; i++) {
+            sum += input.nextInt();
+        }
+
+        System.out.println(sum);
     }
 }
