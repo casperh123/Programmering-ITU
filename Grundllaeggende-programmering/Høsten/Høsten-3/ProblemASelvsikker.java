@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
 
 
 
@@ -12,6 +11,7 @@ public class ProblemASelvsikker {
     
         return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
+
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
@@ -19,22 +19,20 @@ public class ProblemASelvsikker {
         String[] unsortedArray = input.nextLine().split(" ");
         String sortedString = "";
 
-        for (int i = 0; i < unsortedArray.length; i++) {
+        sortedString += capitalize(unsortedArray[1]) + " ";
+        sortedString += unsortedArray[0].replaceAll("([A-Z])", "$1").toLowerCase() + " ";
 
-            switch (i) {
-                case 0:
-                    sortedString += capitalize(unsortedArray[i + 1]) + " ";
-                    break;
-                case 1:
-                    sortedString += unsortedArray[i - 1].replaceAll("([A-Z])", "$1").toLowerCase() + " ";
-                    break;
-                default:
-                    sortedString += unsortedArray[i] + " ";
-                    break;
+        for (int i = 2; i < unsortedArray.length; i++) {
+
+            if (i == (unsortedArray.length - 1)) {
+                sortedString += unsortedArray[i];
+            } else {
+                sortedString += unsortedArray[i] + " ";
             }
 
-            sortedString = sortedString.replace("?", "!");
         }
+
+        sortedString = sortedString.replace("?", "!");
 
         System.out.println(sortedString);
     }
