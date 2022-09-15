@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NiceClass
+comment1.params=list\ comparator
+comment1.target=boolean\ contains(java.util.ArrayList,\ java.lang.String)
+comment2.params=
+comment2.target=void\ test()
+numComments=3
