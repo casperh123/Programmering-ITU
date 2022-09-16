@@ -1,14 +1,14 @@
 #BlueJ package file
 editor.fx.0.height=872
-editor.fx.0.width=1016
-editor.fx.0.x=452
+editor.fx.0.width=1011
+editor.fx.0.x=456
 editor.fx.0.y=0
 objectbench.height=94
-objectbench.width=431
+objectbench.width=430
 package.divider.horizontal=0.6
 package.divider.vertical=0.7030988274706867
 package.editor.height=220
-package.editor.width=343
+package.editor.width=342
 package.editor.x=0
 package.editor.y=0
 package.frame.height=438
@@ -31,7 +31,7 @@ target1.width=120
 target1.x=70
 target1.y=20
 target2.height=70
-target2.name=HashSet
+target2.name=HashSetTest
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=120
