@@ -33,7 +33,7 @@ public class ProblemASelvsikker {
         }
 
         sortedString = sortedString.replace("?", "!");
-
+        
         System.out.println(sortedString);
     }
 }
