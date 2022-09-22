@@ -24,7 +24,7 @@ public class DetailedDifferences {
                     differences += "*";
                 }
             }
-
+            
             System.out.println(firstSequence);
             System.out.println(secondSequence);
             System.out.println(differences);

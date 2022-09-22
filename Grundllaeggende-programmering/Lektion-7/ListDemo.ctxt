@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ListDemo
+comment1.params=
+comment1.target=void\ test()
+comment2.params=list
+comment2.target=long\ insertion(java.util.List)
+comment3.params=list
+comment3.target=long\ traversal(java.util.List)
+numComments=4
