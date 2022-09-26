@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=tabel
+comment1.params=number
+comment1.target=int[]\ tabel(int)
+comment2.params=names
+comment2.target=java.lang.String[]\ toArray(java.util.List)
+comment3.params=numbers
+comment3.target=int[]\ removeEven(int[])
+comment4.params=numbers
+comment4.target=java.util.List\ evenRemover(java.util.List)
+comment5.params=
+comment5.target=void\ printUneven()
+comment6.params=
+comment6.target=void\ printArray()
+comment7.params=
+comment7.target=void\ printTabel()
+numComments=8

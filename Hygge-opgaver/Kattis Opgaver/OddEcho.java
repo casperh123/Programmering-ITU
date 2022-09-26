@@ -14,8 +14,6 @@ public class OddEcho {
         if(!(i % 2 == 0)) {
             System.out.println(possibleEcho);
         }
-
     }
-    
 }
 }
