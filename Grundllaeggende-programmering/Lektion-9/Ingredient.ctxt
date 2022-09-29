@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Ingredient
+comment1.params=quantity\ unit\ name
+comment1.target=Ingredient(int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ display()
+numComments=3

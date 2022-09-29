@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Account
+comment1.params=
+comment1.target=Account()
+comment2.params=amount
+comment2.target=void\ deposit(double)
+numComments=3

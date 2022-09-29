@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Order
+comment1.params=name
+comment1.target=Order(java.lang.String)
+comment2.params=product
+comment2.target=void\ addProduct(Product)
+comment3.params=products
+comment3.target=int\ totalPrice(java.util.List)
+comment4.params=
+comment4.target=void\ print()
+numComments=5
