@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=University
+comment1.params=
+comment1.target=University()
+comment2.params=student
+comment2.target=void\ addStudent(Student)
+comment3.params=teacher
+comment3.target=void\ addTeacher(Teacher)
+comment4.params=
+comment4.target=void\ show()
+numComments=5

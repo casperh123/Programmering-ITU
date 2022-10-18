@@ -1,0 +1,12 @@
+Claus 10
+Peter 12
+Louise 12
+Sebastian 7
+Michelle 10
+Rasmus 4
+Ida 7
+Lucas 10
+Simon 12
+Simone 7
+Filip 7
+Johannes 2
