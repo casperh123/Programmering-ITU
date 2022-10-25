@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MonthlySalaryEmployee
+comment1.params=name\ salary
+comment1.target=MonthlySalaryEmployee(java.lang.String,\ double)
+comment2.params=project
+comment2.target=void\ addProject(java.lang.String)
+numComments=3

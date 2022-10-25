@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Cocktail
+comment1.params=name
+comment1.target=Cocktail(java.lang.String)
+comment2.params=ingredient
+comment2.target=void\ add(Ingredient)
+comment3.params=
+comment3.target=void\ doubleUp()
+comment4.params=
+comment4.target=int\ totalEnergy()
+comment5.params=c
+comment5.target=void\ line(char)
+comment6.params=
+comment6.target=void\ recipe()
+comment7.params=
+comment7.target=boolean\ safe4Kids()
+numComments=8

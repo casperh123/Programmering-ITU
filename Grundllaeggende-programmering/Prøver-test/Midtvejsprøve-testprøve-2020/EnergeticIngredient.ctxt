@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=EnergeticIngredient
+comment1.params=name\ unit\ amount\ protein\ carbs\ fat
+comment1.target=EnergeticIngredient(java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ doubleUp()
+comment3.params=
+comment3.target=int\ energy()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

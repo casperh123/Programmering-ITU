@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=HourlySalaryEmployee
+comment1.params=name\ salaryPerHour\ hours
+comment1.target=HourlySalaryEmployee(java.lang.String,\ double,\ int)
+comment2.params=
+comment2.target=void\ display()
+comment3.params=hours
+comment3.target=void\ registerHours(int)
+numComments=4
