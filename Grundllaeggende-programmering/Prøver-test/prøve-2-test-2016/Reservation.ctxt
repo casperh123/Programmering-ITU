@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Reservation
+comment1.params=phone\ name
+comment1.target=Reservation(int,\ java.lang.String)
+comment2.params=
+comment2.target=int\ getPhone()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=
+comment4.target=java.lang.String\ kind()
+numComments=5

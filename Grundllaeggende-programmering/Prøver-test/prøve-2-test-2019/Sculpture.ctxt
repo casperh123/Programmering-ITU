@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Sculpture
+comment1.params=title\ artist\ year\ price\ height
+comment1.target=Sculpture(java.lang.String,\ java.lang.String,\ int,\ double,\ double)
+comment2.params=
+comment2.target=void\ display()
+numComments=3

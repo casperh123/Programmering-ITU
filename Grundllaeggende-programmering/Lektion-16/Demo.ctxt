@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Demo
+comment1.params=
+comment1.target=void\ makeAccount()
+comment2.params=
+comment2.target=void\ test()
+comment3.params=account\ amount
+comment3.target=void\ makeDeposit(Account,\ int)
+comment4.params=
+comment4.target=void\ test2()
+comment5.params=
+comment5.target=void\ makeWithdrawal()
+comment6.params=
+comment6.target=void\ test3()
+numComments=7

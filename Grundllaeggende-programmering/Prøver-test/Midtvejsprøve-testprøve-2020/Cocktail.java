@@ -71,7 +71,13 @@ public class Cocktail
         for(Ingredient ingredient : ingredients) {
             
             if(ingredient instanceof AlcoholicIngredient) {
-                return false;
+                
+                AlcoholicIngredient alcoholicIngredient = (AlcoholicIngredient) ingredient;
+            
+                if(alcoholicIngredient.isAlcoholic()) {
+                    return false;
+                }
+                
             }
             
             

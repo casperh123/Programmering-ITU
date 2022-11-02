@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Painting
+comment1.params=title\ artist\ year\ price\ genre
+comment1.target=Painting(java.lang.String,\ java.lang.String,\ int,\ double,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getGenre()
+comment3.params=
+comment3.target=void\ display()
+numComments=4

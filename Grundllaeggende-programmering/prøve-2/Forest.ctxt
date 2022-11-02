@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Forest
+comment1.params=name
+comment1.target=Forest(java.lang.String)
+comment2.params=t
+comment2.target=void\ plant(Tree)
+comment3.params=
+comment3.target=void\ grow()
+comment4.params=
+comment4.target=void\ display()
+comment5.params=
+comment5.target=Tree\ tallest()
+comment6.params=type
+comment6.target=void\ display(java.lang.String)
+numComments=7

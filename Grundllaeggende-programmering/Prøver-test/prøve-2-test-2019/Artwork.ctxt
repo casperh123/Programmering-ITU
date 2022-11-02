@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Artwork
+comment1.params=title\ artist\ year\ price
+comment1.target=Artwork(java.lang.String,\ java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=double\ getPrice()
+comment3.params=price
+comment3.target=void\ setPrice(double)
+comment4.params=
+comment4.target=void\ display()
+numComments=5
