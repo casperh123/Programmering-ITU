@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SoftwareModul
+comment1.params=opdateret\ modulNummer
+comment1.target=SoftwareModul(boolean,\ int)
+comment2.params=
+comment2.target=void\ opdaterModul()
+comment3.params=
+comment3.target=boolean\ getOpdateret()
+comment4.params=
+comment4.target=int\ getModulNummer()
+numComments=5

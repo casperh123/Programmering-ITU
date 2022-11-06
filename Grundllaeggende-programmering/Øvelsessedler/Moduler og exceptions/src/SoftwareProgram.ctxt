@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SoftwareProgram
+comment1.params=navn
+comment1.target=SoftwareProgram(java.lang.String)
+comment2.params=modul
+comment2.target=void\ tilfoejModul(SoftwareModul)
+comment3.params=
+comment3.target=void\ koerProgram()
+numComments=4

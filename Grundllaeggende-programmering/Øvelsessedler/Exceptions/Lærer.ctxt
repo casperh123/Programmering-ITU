@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=L\u00E6rer
+comment1.params=navn
+comment1.target=L\u00E6rer(java.lang.String)
+comment2.params=n\ elev
+comment2.target=void\ hvadErNTabellen(int,\ Elev)
+numComments=3

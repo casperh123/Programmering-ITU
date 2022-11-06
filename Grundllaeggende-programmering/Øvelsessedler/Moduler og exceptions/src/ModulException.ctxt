@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ModulException
+comment1.params=modul
+comment1.target=ModulException(SoftwareModul)
+comment2.params=
+comment2.target=int\ faaFejlModulNummer()
+comment3.params=
+comment3.target=SoftwareModul\ faaFejlModul()
+numComments=4

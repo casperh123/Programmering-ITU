@@ -14,7 +14,7 @@ public class Pokechat {
             
             int calculatedIndex = 0;
 
-            for(int i = index; i < index+2 && i < decodingString.length; i++) {
+            for(int i = index; i <= index+2 && i <= decodingString.length; i++) {
             
                 int indexInteger = Integer.parseInt(decodingString[i]);
     
@@ -22,12 +22,12 @@ public class Pokechat {
                     calculatedIndex += indexInteger * 100;
                 } else if (i % 3 == 1) {
                     calculatedIndex += indexInteger * 10;
-                } else {
+                } else if (i % 3 == 2) {
                     calculatedIndex += indexInteger;
                 }
             }
 
-            decodedString += inputString[calculatedIndex];
+            decodedString += inputString[calculatedIndex-1];
 
         }
 

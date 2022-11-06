@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Elev
+comment1.params=navn
+comment1.target=Elev(java.lang.String)
+comment2.params=n
+comment2.target=void\ laerTabel(int)
+comment3.params=n
+comment3.target=void\ sigTabel(int)
+numComments=4
