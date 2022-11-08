@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Election
+comment1.params=question
+comment1.target=Election(java.lang.String)
+comment2.params=v
+comment2.target=void\ vote(char)
+comment3.params=fraction\ total
+comment3.target=int\ percentage(int,\ int)
+comment4.params=fraction\ total
+comment4.target=java.lang.String\ visualize(int,\ int)
+comment5.params=
+comment5.target=void\ display()
+numComments=6

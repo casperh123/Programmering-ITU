@@ -18,7 +18,7 @@ public class Demo {
         CargoShip c = new CargoShip("MørskT13", 4, 3);
         c.addBooking("62938", 0, true, 2, 1);
         try {
-            c.checkAddBooking("89647", 2, true, 3 ,0);    
+            c.checkAddBooking("89647", 2, true, 2, 1);    
         } catch (ContainerAlreadyBookedException e) {
             System.out.println(e.getMessage() + " " + e.requestedContainer());
         }

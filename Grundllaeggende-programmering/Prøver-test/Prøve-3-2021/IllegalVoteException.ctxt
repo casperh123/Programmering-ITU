@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IllegalVoteException
+comment1.params=illegal_vote
+comment1.target=IllegalVoteException(char)
+comment2.params=
+comment2.target=char\ getIllegalVote()
+numComments=3
