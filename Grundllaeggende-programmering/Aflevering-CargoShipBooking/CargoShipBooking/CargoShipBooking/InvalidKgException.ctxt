@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=InvalidKgException
+comment1.params=message
+comment1.target=InvalidKgException(java.lang.String)
+numComments=2

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Booking
+comment1.params=bookingId\ kg\ flammableGoodsIncluded\ container
+comment1.target=Booking(java.lang.String,\ int,\ boolean,\ Container)
+comment2.params=
+comment2.target=int\ getKgs()
+comment3.params=
+comment3.target=boolean\ getFlammableGoodsIncluded()
+numComments=4

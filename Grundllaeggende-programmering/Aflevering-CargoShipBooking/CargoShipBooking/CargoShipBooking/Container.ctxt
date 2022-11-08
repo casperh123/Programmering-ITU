@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Container
+comment1.params=coloumn\ row
+comment1.target=Container(int,\ int)
+comment2.params=
+comment2.target=boolean\ getBooked()
+comment3.params=
+comment3.target=void\ setBooked()
+numComments=4

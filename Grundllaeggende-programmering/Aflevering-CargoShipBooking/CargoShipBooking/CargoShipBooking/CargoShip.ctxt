@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=CargoShip
+comment1.params=model\ coloumns\ rowsPerColoumn
+comment1.target=CargoShip(java.lang.String,\ int,\ int)
+comment2.params=bookingId\ kg\ flammableGoods\ requestedColoumn\ requestedRowNo
+comment2.target=void\ addBooking(java.lang.String,\ int,\ boolean,\ int,\ int)
+comment2.text=Tilf\u00F8jer\ en\ ny\ booking\ til\ listen\ bookings.
+comment3.params=
+comment3.target=double\ avgKg()
+comment3.text=Udregner\ det\ gennemsnitlige\ antal\ kilo\ per\ booking.
+comment4.params=coloumns\ rowsPerColoumn
+comment4.target=Container[][]\ buildCargoShip(int,\ int)
+comment4.text=\ Hj\u00E6lpemetode\ til\ constructoren.\r\nOpretter\ Container-objekter,\ som\ den\ tilf\u00F8jer\ til\ containers.
+comment5.params=bookingId\ kg\ flammableGoods\ requestedColumn\ requestedRow
+comment5.target=void\ checkAddBooking(java.lang.String,\ int,\ boolean,\ int,\ int)
+comment5.text=SKRIV\ DIN\ KODE\ HERUNDER
+comment6.params=
+comment6.target=void\ showCargoShip()
+comment7.params=
+comment7.target=double\ flammableGoodsFactor()
+numComments=8
