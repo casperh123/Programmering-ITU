@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Passable
+comment1.params=people
+comment1.target=void\ enter(int)
+comment2.params=people
+comment2.target=void\ exit(int)
+numComments=3

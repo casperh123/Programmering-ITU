@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CapacityExceededException
+comment1.params=excess
+comment1.target=CapacityExceededException(int)
+comment2.params=
+comment2.target=int\ getExcess()
+numComments=3

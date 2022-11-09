@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=StateViolationException
+comment1.params=number
+comment1.target=StateViolationException(int)
+comment2.params=
+comment2.target=int\ getNumber()
+numComments=3
