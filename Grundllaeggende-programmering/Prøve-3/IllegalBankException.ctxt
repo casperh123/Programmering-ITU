@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IllegalBankException
+comment1.params=illegal_bank
+comment1.target=IllegalBankException(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getIllegalBank()
+numComments=3

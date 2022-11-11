@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Transaction
+comment1.params=sender\ recipient\ amount
+comment1.target=Transaction(java.lang.String,\ java.lang.String,\ int)
+comment2.params=bank
+comment2.target=void\ completeViaBank(java.lang.String)
+comment3.params=
+comment3.target=void\ notifyRecipient()
+comment4.params=
+comment4.target=void\ handleTransaction()
+numComments=5
