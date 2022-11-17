@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NoDataForWeekException
+comment1.params=week
+comment1.target=NoDataForWeekException(int)
+comment2.params=
+comment2.target=java.lang.String\ getMessage()
+numComments=3

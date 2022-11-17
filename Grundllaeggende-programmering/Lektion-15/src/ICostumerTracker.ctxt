@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ICostumerTracker
+comment1.params=
+comment1.target=int\ today()
+comment2.params=
+comment2.target=double\ avgThisWeek()
+comment3.params=week
+comment3.target=double\ comparedToWeek(int)
+numComments=4

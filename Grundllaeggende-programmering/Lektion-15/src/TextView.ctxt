@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=TextView
+comment1.params=cTracker
+comment1.target=TextView(ICostumerTracker)
+comment2.params=
+comment2.target=void\ printToday()
+comment3.params=
+comment3.target=void\ printAvgThisWeek()
+comment4.params=week
+comment4.target=void\ printComparedToWeek(int)
+numComments=5
