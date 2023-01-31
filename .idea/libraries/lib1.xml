@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/junit-platform-console-standalone-1.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/junit_junit_4.13.2_junit-4.13.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Grundllaeggende-programmering/Aflevering-c/lib/javafx.base.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

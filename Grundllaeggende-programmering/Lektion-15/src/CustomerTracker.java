@@ -2,6 +2,7 @@ package src;
 import java.util.HashMap;
 
 public class CustomerTracker implements ICostumerTracker {
+    
     private HashMap<Integer, int[]> customerData;
     private int currentWeek;
 
