@@ -28,10 +28,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Casper/Desktop/Programmering/Projekter/Første-års-projekt-excercises/ex1",
+    "last_opened_file_path": "C:/Users/Casper/Desktop/Programmering/Projekter/Første-års-projekt-excercises/ex1/factorial",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15136719",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -44,6 +45,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675169680797</updated>
       <workItem from="1675169681897" duration="418000" />
+      <workItem from="1675186506567" duration="63000" />
+      <workItem from="1675186586272" duration="139000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
-package java.bfst22.factorial;
+package bfst22.factorial;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,7 +20,12 @@ class FactorialTest {
     }
 
     @Test
-    void testThrowsBadUserExcperience() {
+    void testThrowsBadUserExperience() {
         assertThrows(BadUserException.class, () -> math.factorial(-200));
+    }
+
+    @Test
+    void factorialReturnsFactorialTest() {
+        assertEquals(math.factorial(4), 24);
     }
 }

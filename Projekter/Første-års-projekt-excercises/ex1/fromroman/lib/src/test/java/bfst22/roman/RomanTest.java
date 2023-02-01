@@ -6,6 +6,20 @@ import static org.junit.jupiter.api.Assertions.*;
 class RomanTest {
     @Test
     void fromRomanIX() {
-        assertEquals(Roman.fromRoman("IX"), 9, "fromRoman(\"IX\") should return 9");
+        assertEquals(9, Roman.fromRoman("IX"), "fromRoman(\"IX\") should return 9");
+    }
+
+    @Test
+    void fromRomanAllCharacters() {
+        assertEquals(1666, Roman.fromRoman("IVXLCDM"));
+    }
+
+    @Test
+    void fromIItoSixty() {
+        assertEquals(2, Roman.fromRoman("II"));
+    }
+
+    @Test void fromInvalidTo() {
+        assertEquals(0, Roman.fromRoman("aaaaazzz"));
     }
 }

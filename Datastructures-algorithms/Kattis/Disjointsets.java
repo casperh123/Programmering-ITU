@@ -1,63 +1,85 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.HashMap;
 
 public class Disjointsets {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
 
-        int initialSingletons = input.nextInt();
-        int iterations = input.nextInt();
+        String[] firstInputString = input.nextLine().split(" ");
 
-        HashMap<Integer, Set<Integer>> sets = new HashMap<>(); 
+        int[] ids = new int[Integer.parseInt(firstInputString[0])];
+        int[] size = new int[Integer.parseInt(firstInputString[1])];
 
-        for(int i = 0; i < initialSingletons; i++) {
-            HashSet<Integer> singletonSet = new HashSet<>();
-
-            singletonSet.add(i);
-
-            sets.put(i, singletonSet);
+        for(int i = 0; i < Integer.parseInt(firstInputString[0]); i++) {
+            ids[i] = i;
+            size[i] = 1;
         }
 
-        for(int i = 0; i < iterations; i++) {
+        for(int i = 0; i < Integer.parseInt(firstInputString[1]); i++) {
+            
+            String[] inputString = input.nextLine().split(" ");
 
-            int query = input.nextInt();
-            int elementS = input.nextInt();
-            int elementT = input.nextInt();
+            int query = Integer.parseInt(inputString[0]);
+            int elementS = Integer.parseInt(inputString[1]);
+            int elementT = Integer.parseInt(inputString[2]);
 
             if(query == 0) {
+                if(connected(elementS, elementT, ids)) {
+                    System.out.println(1);
+                } else {
+                    System.out.println(0);
+                }
+            }
+            if(query == 1) {
+                union(elementS, elementT, ids, size);
+            } 
+            if(query == 2) {
+                move(elementS, elementT, ids, size);
+            }
+        }
+    }
 
-                Set<Integer> comparatorSet = sets.get(elementS);
+    public static boolean connected(int s, int t, int[] ids) {
+        return find(s, ids) == find(t, ids);
+    }
 
-                    if(comparatorSet.contains(elementS)) {
-                        System.out.println(1);
-                    } else {
-                        System.out.println(0);
-                    }
+    public static int find(int s, int[] ids) {
+        while(s != ids[s]) {
+            s = ids[s];
+        }
+        return s;
+    }
 
-            } else if (query == 1 && elementS != elementT) {
-                
-                Set<Integer> elementSSet = sets.get(elementS);
-                Set<Integer> elementTSet = sets.get(elementT);
-    
-                elementSSet.addAll(elementTSet);
+    public static void union(int s, int t, int[] ids, int[] size) {
 
-                elementTSet.forEach(value -> sets.merge(value, elementSSet, (a, b) -> b));
+        int elementSRoot = find(s, ids);
+        int elementTRoot = find(t, ids);
 
-            } else if (query == 2 && elementS != elementT) {
-                
-                Set<Integer> movingToSet = sets.get(elementT);
-                
-                movingToSet.add(elementS);
-                
-                sets.get(elementS).remove(elementS);
+        if(elementSRoot == elementTRoot) {
+            return;
+        }
 
-                sets.merge(elementS, movingToSet, (a, b) -> b);
+        if(size[elementSRoot] < size[elementTRoot]) {
+            ids[s] = elementTRoot;
+            size[elementTRoot] += size[elementSRoot];
+        }  else {
+            ids[t] = elementSRoot;
+            size[elementSRoot] += size[elementTRoot];
+        }
+    }
+
+    public static void move(int s, int t, int[] ids, int[] size) {
+       
+        if(ids[s] == ids[t]) {
+            return;
+        }
+        
+        ids[s] = ids[t];
+        
+        for(int i = 0; i < ids.length; i++) {
+            if(ids[i] == s) {
+                ids[i] = i;
+                break;
             }
         }
     }
