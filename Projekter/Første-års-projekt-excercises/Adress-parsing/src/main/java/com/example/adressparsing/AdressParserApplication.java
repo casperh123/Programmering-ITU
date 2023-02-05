@@ -9,6 +9,10 @@ import javafx.stage.Stage;
 
 public class AdressParserApplication extends Application {
 
+    public String getGreeting() {
+        return "Hello World";
+    }
+
 
     public static void main(String[] args) {
         launch();
