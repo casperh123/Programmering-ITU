@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="bfst2023.handins.AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-03T12:32:59" hostname="CASPERMAN" time="0.06">
+<testsuite name="bfst2023.handins.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-05T15:40:26" hostname="CASPERMAN" time="0.02">
   <properties/>
-  <testcase name="simple()" classname="bfst2023.handins.AppTest" time="0.041"/>
-  <testcase name="appHasAGreeting()" classname="bfst2023.handins.AppTest" time="0.017"/>
+  <testcase name="simple()" classname="bfst2023.handins.AppTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
