@@ -1,33 +1,57 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+
+
 public class EyeOfSauron {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+
+        List<Character> charStack = new ArrayList<>();
+        Boolean balanced = false;
 
         Scanner input = new Scanner(System.in);
+        
+        String inputString = input.nextLine();
 
-        String[] inputString = input.nextLine().split("");
-        int leftSide = 0;
-        int rightSide = 0;
-        boolean leftSideScanned = false;
+        for(int i = 0; i < inputString.length(); i++) {
 
-        for(int i = 0; i < inputString.length; i++) {
-            
-            if(!leftSideScanned) {
-                if (inputString[i].equals("|")) {
-                    leftSide++;
-                } else {
-                    leftSideScanned = true;
-                    i++;
+            balanced = false;
+
+            char operand = inputString.charAt(i);
+
+            if(operand == '(' || operand == '|') {
+                push(operand, charStack);
+                continue;
+            } else if(!(charStack.size() == 0)) {
+                switch(operand) {
+                    case ')':
+                        balanced = pop(charStack) == '(';
+                        break;
+                    case '|':
+                        balanced = pop(charStack) == '|';
+                        break;
                 }
             } else {
-                if (inputString[i].equals("|")) {
-                    rightSide++;
-                }
+                balanced = false;
+                break;
             }
-
         }
 
-        System.out.println(leftSide == rightSide ? "correct" : "fix");
-        
+        if(!balanced) {
+            System.out.println("fix");
+        } else {
+            System.out.println("correct");
+        }
+    }
+
+    public static void push(char operand, List<Character> charStack) {
+        charStack.add(operand);
+    }
+
+    public static char pop(List<Character> charStack) {
+        char tempChar = charStack.get(charStack.size()-1);
+        charStack.remove(charStack.size()-1);
+        return tempChar;
     }
 }

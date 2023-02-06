@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 import edu.princeton.cs.algs4.StdIn;
@@ -9,35 +10,43 @@ public class Balance {
     public static void main(String[] args) {
 
         Stack<Character> charStack = new Stack<>();
+        
         Boolean balanced = false;
 
-        String inputString = StdIn.readAll();
+        String inputString = StdIn.readString();
 
-        for(int i = 0; i < inputString.length(); i++) {
+        if(!(inputString.length() % 2 == 0)) {
+            StdOut.println(0);
+            return;
+        }
+        
+        for(Character operand : inputString.toCharArray()) {
 
-            balanced = false;;
+            balanced = false;
 
-            char operand = inputString.charAt(i);
-
-            if(operand == '(' || operand == '[') {
+            if((operand == ')' || operand == ']') && charStack.isEmpty()) {
+                balanced = false;
+                break;
+            } else if(operand == '(' || operand == '[') {
                 charStack.push(operand);
-            } else if(!charStack.isEmpty()) {
-                switch(operand) {
-                    case ')':
-                        balanced = charStack.pop() == '(';
-                        break;
-                    case ']':
-                        balanced = charStack.pop() == '[';
-                        break;
-                }
+                continue;
+            } else if(charStack.peek() == '(' && operand == ')' || charStack.peek() == '[' && operand == ']') {
+                balanced = true;
+                charStack.pop();
+            } else {
+                balanced = false;
+                break;
             }
-
         }
 
-        if(!charStack.isEmpty() || !balanced) {
-            StdOut.println(0);
+        if(!charStack.isEmpty()) {
+            balanced = false;
+        }
+
+        if(balanced) {
+            StdOut.print(1);
         } else {
-            StdOut.println(1);
+            StdOut.print(0);
         }
     }
 }
