@@ -1,50 +1,49 @@
-import java.util.Scanner;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 
 public class Disjointsets {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         
-        Scanner input = new Scanner(System.in);
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
 
-        String[] firstInputString = input.nextLine().split(" ");
+        String[] firstInputString = input.readLine().split(" ");
 
         int[] ids = new int[Integer.parseInt(firstInputString[0])];
-        int[] size = new int[Integer.parseInt(firstInputString[1])];
+        int[] size = new int[Integer.parseInt(firstInputString[0])];
+        int iterations = Integer.parseInt(firstInputString[1]);
 
-        for(int i = 0; i < Integer.parseInt(firstInputString[0]); i++) {
+        for(int i = 0; i < ids.length; i++) {
             ids[i] = i;
             size[i] = 1;
         }
 
-        for(int i = 0; i < Integer.parseInt(firstInputString[1]); i++) {
+        for(int i = 0; i < iterations; i++) {
             
-            String[] inputString = input.nextLine().split(" ");
+            String[] inputString = input.readLine().split(" ");
 
-            int query = Integer.parseInt(inputString[0]);
+            String query = inputString[0];
             int elementS = Integer.parseInt(inputString[1]);
             int elementT = Integer.parseInt(inputString[2]);
 
-            if(query == 0) {
-                if(connected(elementS, elementT, ids)) {
-                    System.out.println(1);
+            if(query.equals("?")) {
+                if(find(elementS, ids) == find(elementS, ids)) {
+                    out.print("yes");
                 } else {
-                    System.out.println(0);
+                    out.print("no");
                 }
-            }
-            if(query == 1) {
+            } else {
                 union(elementS, elementT, ids, size);
             } 
-            if(query == 2) {
-                move(elementS, elementT, ids, size);
-            }
         }
-    }
-
-    public static boolean connected(int s, int t, int[] ids) {
-        return find(s, ids) == find(t, ids);
     }
 
     public static int find(int s, int[] ids) {
         while(s != ids[s]) {
+            ids[s] = ids[ids[s]];
             s = ids[s];
         }
         return s;
@@ -60,10 +59,10 @@ public class Disjointsets {
         }
 
         if(size[elementSRoot] < size[elementTRoot]) {
-            ids[s] = elementTRoot;
+            ids[elementSRoot] = elementTRoot;
             size[elementTRoot] += size[elementSRoot];
         }  else {
-            ids[t] = elementSRoot;
+            ids[elementTRoot] = elementSRoot;
             size[elementSRoot] += size[elementTRoot];
         }
     }
