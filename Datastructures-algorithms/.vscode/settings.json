@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\Casper\\Documents\\Course-libraries\\algs4.jar"
+        "c:\\Users\\Casper\\Documents\\Course-libraries\\algs4.jar",
+        "c:\\Users\\Casper\\Desktop\\Programmering\\Referenced Libraries\\algs4.jar"
     ]
 }
