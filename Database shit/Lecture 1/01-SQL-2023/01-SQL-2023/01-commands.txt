@@ -1,0 +1,53 @@
+-- These are some examples commands that you can use to practice the use of different tools. 
+
+-- Go to the exercise directory
+cd [your directory] 
+
+-- Examine processes to see if postgres is running (normally it should always run in the background once you install it)
+ps -ef | grep -i postgres
+
+-- If not, (re)start postgres 
+-- Check online guides for different OS systems. 
+-- For MacOS you can find a relevant link on Piazza.
+
+
+-- Create a database
+createdb W01
+
+-- Go to pgAdmin. See the created database W01 there. 
+
+-- Drop the database
+dropdb W01 
+
+-- Go to pgAdmin. Create W01 again from there. Load the "Games" script.
+
+-- Load the script from psql
+psql W01 < Games.sql
+
+-- Do it silently
+psql -q W01 < Games.sql
+
+ -- Scroll through the contents of the script
+psql -q W01 < Games.sql | less
+
+-- Go in the psql environment
+psql -q W01
+
+-- Show tables
+\dt
+
+-- Show the content of the game table
+select * from game;
+
+-- Get out of the psql environment
+\q
+
+-- Go to pgAdmin. 
+select * from game; 
+
+-- See the table schema on the left. 
+
+-- One more query. Notice that only last query results appear.
+select * from score; 
+
+-- Check the 01-queries.sql file for more example queries. 
