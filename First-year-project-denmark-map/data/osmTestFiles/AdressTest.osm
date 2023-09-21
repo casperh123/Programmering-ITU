@@ -1,0 +1,16 @@
+<osm version="0.6" generator="Overpass API 0.7.59 e21c39fe">
+    <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+    <meta osm_base="2023-02-16T09:18:54Z"/>
+    <bounds minlat="55.6537000" minlon="12.5702000" maxlat="55.6810000" maxlon="12.6235000"/>
+
+    <node id="340484085" lat="55.6780490" lon="12.5818910" version="12" timestamp="2021-12-29T19:27:05Z" changeset="115534827" uid="8209541" user="autoAWS">
+        <tag k="addr:city" v="København K"/>
+        <tag k="addr:country" v="DK"/>
+        <tag k="addr:housenumber" v="17"/>
+        <tag k="addr:municipality" v="København"/>
+        <tag k="addr:postcode" v="1066"/>
+        <tag k="addr:street" v="Admiralgade"/>
+        <tag k="osak:identifier" v="0a3f507a-3715-32b8-e044-0003ba298018"/>
+        <tag k="source" v="Danmarks Adresseregister"/>
+    </node>
+</osm>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="backmostAnchorPane" maxHeight="1080.0" maxWidth="1920.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainViewController">
+    <Pane fx:id="navBar" prefHeight="25.0" prefWidth="288.0">
+        <children>
+            <TextField fx:id="searchField" prefHeight="25.0" prefWidth="203.0" />
+            <Button fx:id="searchButton" defaultButton="true" layoutX="203.0" onAction="#setTextInputAsTo" onKeyPressed="#setTextInputAsTo" prefHeight="25.0" prefWidth="32.0" stylesheets="@style.css">Go</Button>
+            <Button fx:id="ruteFinderButton" layoutX="243.0" mnemonicParsing="false" onAction="#showRouteFinding" prefHeight="25.0" prefWidth="41.0">
+                <graphic>
+                    <ImageView fitHeight="16.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../../data/img/directions.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <ListView fx:id="listView" layoutY="25.0" prefHeight="118.0" prefWidth="203.0" visible="false" />
+        </children>
+    </Pane>
+   <Pane fx:id="findDirectionsPane" disable="true" prefHeight="118.0" prefWidth="288.0" style="-fx-background-color: #BCBCBC;" visible="false">
+      <children>
+           <Button fx:id="calculateRoute" alignment="CENTER_RIGHT" layoutX="205.0" layoutY="80.0" mnemonicParsing="false" text="Go" />
+           <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../../../data/img/marker-green.png" />
+           </ImageView>
+           <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="10.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../../../data/img/marker-red.png" />
+           </ImageView>
+           <Button fx:id="swapToFromTextButton" layoutX="247.0" layoutY="26.0" mnemonicParsing="false" onAction="#swapToFromText" prefHeight="41.0" prefWidth="41.0" />
+           <ToggleButton fx:id="carButton" layoutX="34.0" layoutY="80.0" mnemonicParsing="false" onAction="#chooseCar" prefHeight="25.0" prefWidth="39.0" />
+           <ToggleButton fx:id="bicycleButton" layoutX="97.0" layoutY="79.0" mnemonicParsing="false" onAction="#chooseBicycle" prefHeight="25.0" prefWidth="39.0">
+               <graphic>
+                   <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                       <Image url="@../../../../data/img/person-cycling.png" />
+                   </ImageView>
+               </graphic>
+           </ToggleButton>
+           <ToggleButton fx:id="walkButton" layoutX="157.0" layoutY="80.0" mnemonicParsing="false" onAction="#chooseWalk" prefHeight="25.0" prefWidth="39.0">
+               <graphic>
+                   <ImageView fitHeight="41.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                       <Image url="@../../../../data/img/person-walking.png" />
+                   </ImageView>
+               </graphic>
+           </ToggleButton>
+           <Button fx:id="hideFindDirectionsButton" layoutX="247.0" layoutY="1.0" mnemonicParsing="false" onAction="#hideRouteFinding" prefHeight="25.0" prefWidth="41.0" />
+           <TextField fx:id="fromTextField" layoutX="34.0" layoutY="13.0" prefHeight="25.0" prefWidth="203.0" />
+           <TextField fx:id="toTextField" layoutX="34.0" layoutY="46.0" prefHeight="25.0" prefWidth="203.0" />
+           <ListView fx:id="fromListView" layoutX="34.0" layoutY="38.0" prefHeight="124.0" prefWidth="203.0" visible="false" />
+           <ListView fx:id="toListView" layoutX="34.0" layoutY="72.0" prefHeight="118.0" prefWidth="203.0" visible="false" />
+      </children>
+   </Pane>
+    <VBox fx:id="zoomPanel" alignment="TOP_RIGHT" layoutX="752.0" layoutY="106.0" opacity="0.7" prefHeight="293.0" prefWidth="40.0">
+        <Button fx:id="zoomInButton" mnemonicParsing="false" onAction="#zoomIn" prefHeight="40.0" prefWidth="40.0" />
+        <Button fx:id="zoomOutButton" mnemonicParsing="false" onAction="#zoomOut" prefHeight="40.0" prefWidth="40.0" />
+        <Separator orientation="VERTICAL" prefHeight="10.0" prefWidth="31.0" visible="false" />
+      <Button fx:id="placeMarkerButton" mnemonicParsing="false" onMouseClicked="#toggleMapMarkerMode" prefHeight="40.0" prefWidth="40.0" />
+        <Separator orientation="VERTICAL" prefHeight="10.0" prefWidth="0.0" visible="false" />
+        <ToggleButton fx:id="changeThemeButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#DarkThemeMode" prefHeight="40.0" prefWidth="40.0">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../data/img/Dark-Mode.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </ToggleButton>
+      <Separator orientation="VERTICAL" prefHeight="10.0" prefWidth="5.0" visible="false" />
+      <Label text="Zoom level:" textAlignment="CENTER" wrapText="true" />
+        <Label fx:id="zoomLevelLabel" alignment="CENTER" prefHeight="26.0" prefWidth="46.0" text="0 %" />
+    </VBox>
+    <ToggleButton fx:id="debugButton" layoutX="705.0" layoutY="2.0" mnemonicParsing="false" onAction="#toggleDebugMode" text="Debug Mode" />
+    <Button fx:id="fileSelectorButton" cancelButton="true" layoutX="604.0" layoutY="2.0" mnemonicParsing="false" text="File selection" />
+    <TextArea fx:id="routeGuideTextArea" disable="true" editable="false" layoutY="191.0" prefHeight="279.0" prefWidth="200.0" text="Route guidance:" visible="false" wrapText="true" />
+   <Button fx:id="copyTextArea" disable="true" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#copyTextArea" text="Copy route" visible="false" />
+   <Button fx:id="clearTextArea" disable="true" layoutX="156.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#clearTextArea" text="Clear" visible="false" />
+</AnchorPane>

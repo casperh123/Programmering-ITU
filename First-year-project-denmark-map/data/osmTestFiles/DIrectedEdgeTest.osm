@@ -1,0 +1,200 @@
+<osm version="0.6" generator="Overpass API 0.7.59 e21c39fe">
+    <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+    <meta osm_base="2023-02-16T09:18:54Z"/>
+    <bounds minlat="55.6537000" minlon="12.5702000" maxlat="55.6810000" maxlon="12.6235000"/>
+    <node id="4342157817" lat="55.6593079" lon="12.5874604" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157813" lat="55.6592050" lon="12.5883576" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157806" lat="55.6589092" lon="12.5882235" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157805" lat="55.6588804" lon="12.5881538" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157807" lat="55.6589296" lon="12.5877823" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157808" lat="55.6589984" lon="12.5876052" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157814" lat="55.6592148" lon="12.5872686" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157817" lat="55.6593079" lon="12.5874604" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="5849799047" lat="55.6592200" lon="12.5879408" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799046" lat="55.6589772" lon="12.5878631" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799045" lat="55.6589515" lon="12.5880964" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799044" lat="55.6591913" lon="12.5881755" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799047" lat="55.6592200" lon="12.5879408" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="268690828" lat="55.6808658" lon="12.5873438" version="7" timestamp="2019-05-29T17:55:33Z" changeset="70742958" uid="2677992" user="mikkolukas">
+        <tag k="highway" v="traffic_signals"/>
+    </node>
+    <node id="3035052616" lat="55.6809386" lon="12.5874249" version="7" timestamp="2022-02-12T15:29:09Z" changeset="117325788" uid="100060" user="Troels Arvin">
+        <tag k="button_operated" v="no"/>
+        <tag k="crossing" v="traffic_signals"/>
+        <tag k="highway" v="crossing"/>
+        <tag k="tactile_paving" v="yes"/>
+        <tag k="traffic_signals:sound" v="yes"/>
+        <tag k="traffic_signals:vibration" v="no"/>
+    </node>
+    <node id="8085676" lat="55.6813849" lon="12.5878373" version="5" timestamp="2012-09-10T12:47:43Z" changeset="13056565" uid="359193" user="JeffH"/>
+    <node id="300361948" lat="55.6820690" lon="12.5883942" version="5" timestamp="2018-02-17T17:29:12Z" changeset="56445802" uid="1288" user="Niels Elgaard Larsen"/>
+    <node id="697814" lat="55.6768419" lon="12.5829825" version="4" timestamp="2011-03-28T10:01:49Z" changeset="7694939" uid="426207" user="Jens G"/>
+    <node id="6727054761" lat="55.6767287" lon="12.5826259" version="3" timestamp="2022-01-02T23:30:04Z" changeset="115689058" uid="685140" user="Kevin Simper"/>
+    <node id="8495747558" lat="55.6766990" lon="12.5825738" version="3" timestamp="2022-08-12T11:19:10Z" changeset="124814040" uid="9625546" user="Wynwood"/>
+    <node id="6504028" lat="55.6646404" lon="12.6042746" version="10" timestamp="2010-12-06T19:02:30Z" changeset="6567051" uid="35028" user="tagg">
+        <tag k="highway" v="traffic_signals"/>
+    </node>
+    <node id="8579429824" lat="55.6645731" lon="12.6043423" version="5" timestamp="2021-04-19T15:24:07Z" changeset="103208284" uid="80543" user="Peter Brodersen">
+        <tag k="button_operated" v="no"/>
+        <tag k="crossing" v="traffic_signals"/>
+        <tag k="highway" v="crossing"/>
+        <tag k="tactile_paving" v="no"/>
+        <tag k="traffic_signals:sound" v="no"/>
+        <tag k="traffic_signals:vibration" v="no"/>
+    </node>
+    <node id="278116591" lat="55.6638879" lon="12.6050307" version="4" timestamp="2015-11-10T22:34:56Z" changeset="35228155" uid="207581" user="Hjart"/>
+    <node id="445526153" lat="55.6629219" lon="12.6061757" version="2" timestamp="2011-08-06T16:45:18Z" changeset="8939527" uid="492719" user="Robotron3000"/>
+    <node id="4262012517" lat="55.6629030" lon="12.6061745" version="2" timestamp="2021-04-19T15:25:28Z" changeset="103208279" uid="80543" user="Peter Brodersen">
+        <tag k="crossing" v="zebra"/>
+        <tag k="highway" v="crossing"/>
+        <tag k="tactile_paving" v="no"/>
+    </node>
+    <node id="6504038" lat="55.6628327" lon="12.6061701" version="10" timestamp="2011-08-06T16:45:15Z" changeset="8939527" uid="492719" user="Robotron3000"/>
+    <node id="92994313" lat="55.6681080" lon="12.5721273" version="11" timestamp="2021-08-03T14:17:25Z" changeset="109098464" uid="649780" user="Lytter1"/>
+    <node id="884220685" lat="55.6682326" lon="12.5722540" version="6" timestamp="2021-03-06T13:19:43Z" changeset="100535481" uid="1288" user="Niels Elgaard Larsen"/>
+    <way id="436343091" version="2" timestamp="2019-08-20T10:54:03Z" changeset="73533117" uid="156646" user="archie">
+        <nd ref="4342157817"/>
+        <nd ref="4342157813"/>
+        <nd ref="4342157806"/>
+        <nd ref="4342157805"/>
+        <nd ref="4342157807"/>
+        <nd ref="4342157808"/>
+        <nd ref="4342157814"/>
+        <nd ref="4342157817"/>
+    </way>
+    <way id="1522015" version="17" timestamp="2021-10-14T11:06:52Z" changeset="112498615" uid="1288" user="Niels Elgaard Larsen">
+        <nd ref="6504028"/>
+        <nd ref="8579429824"/>
+        <nd ref="278116591"/>
+        <nd ref="445526153"/>
+        <nd ref="4262012517"/>
+        <nd ref="6504038"/>
+        <tag k="cycleway" v="no"/>
+        <tag k="highway" v="residential"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Ålandsgade"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="oneway:bicycle" v="no"/>
+        <tag k="sidewalk" v="both"/>
+        <tag k="source:maxspeed" v="DK:urban"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="1521728" version="20" timestamp="2022-01-02T23:30:04Z" changeset="115689058" uid="685140" user="Kevin Simper">
+        <nd ref="697814"/>
+        <nd ref="6727054761"/>
+        <nd ref="8495747558"/>
+        <tag k="cycleway" v="track"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="4"/>
+        <tag k="lanes:backward" v="2"/>
+        <tag k="lanes:forward" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Holmens Kanal"/>
+        <tag k="sidewalk" v="both"/>
+        <tag k="source:maxspeed" v="DK:urban"/>
+        <tag k="surface" v="asphalt"/>
+        <tag k="turn:lanes:forward" v="through|right"/>
+    </way>
+    <way id="1702117" version="27" timestamp="2022-11-10T06:28:07Z" changeset="128715890" uid="21323" user="AE35">
+        <nd ref="268690828"/>
+        <nd ref="3035052616"/>
+        <nd ref="8085676"/>
+        <nd ref="300361948"/>
+        <tag k="check_date:cycleway" v="2022-09-28"/>
+        <tag k="cycleway:right" v="track"/>
+        <tag k="highway" v="primary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Bredgade"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="ref" v="O2"/>
+        <tag k="sidewalk" v="both"/>
+        <tag k="sidewalk:both:surface" v="paving_stones"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="35994652" version="24" timestamp="2023-01-07T08:33:17Z" changeset="130972203" uid="13626487" user="koebenhavn">
+        <nd ref="92994313"/>
+        <nd ref="884220685"/>
+        <tag k="cycleway:right" v="separate"/>
+        <tag k="foot" v="no"/>
+        <tag k="highway" v="primary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Kalvebod Brygge"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="ref" v="O2"/>
+        <tag k="source:maxspeed" v="DK:urban"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="35994652" version="24" timestamp="2023-01-07T08:33:17Z" changeset="130972203" uid="13626487" user="koebenhavn">
+        <nd ref="92994313"/>
+        <nd ref="884220685"/>
+        <tag k="cycleway:right" v="separate"/>
+        <tag k="foot" v="no"/>
+        <tag k="highway" v="cycleway"/>
+        <tag k="lanes" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Kalvebod Brygge"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="ref" v="O2"/>
+        <tag k="source:maxspeed" v="DK:urban"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="35994652" version="24" timestamp="2023-01-07T08:33:17Z" changeset="130972203" uid="13626487" user="koebenhavn">
+        <nd ref="92994313"/>
+        <nd ref="884220685"/>
+        <tag k="cycleway:right" v="separate"/>
+        <tag k="foot" v="no"/>
+        <tag k="highway" v="cycleway"/>
+        <tag k="lanes" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Kalvebod Brygge"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="ref" v="O2"/>
+        <tag k="source:maxspeed" v="DK:urban"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="1702117" version="27" timestamp="2022-11-10T06:28:07Z" changeset="128715890" uid="21323" user="AE35">
+        <nd ref="268690828"/>
+        <nd ref="3035052616"/>
+        <nd ref="8085676"/>
+        <nd ref="300361948"/>
+        <tag k="check_date:cycleway" v="2022-09-28"/>
+        <tag k="cycleway:right" v="track"/>
+        <tag k="highway" v="footway"/>
+        <tag k="lanes" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Bredgade"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="ref" v="O2"/>
+        <tag k="sidewalk" v="both"/>
+        <tag k="sidewalk:both:surface" v="paving_stones"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="1702117" version="27" timestamp="2022-11-10T06:28:07Z" changeset="128715890" uid="21323" user="AE35">
+        <nd ref="268690828"/>
+        <nd ref="3035052616"/>
+        <nd ref="8085676"/>
+        <nd ref="300361948"/>
+        <tag k="check_date:cycleway" v="2022-09-28"/>
+        <tag k="cycleway:right" v="track"/>
+        <tag k="highway" v="footway"/>
+        <tag k="lanes" v="2"/>
+        <tag k="lit" v="yes"/>
+        <tag k="maxspeed" v="50"/>
+        <tag k="name" v="Bredgade"/>
+        <tag k="oneway" v="yes"/>
+        <tag k="ref" v="O2"/>
+        <tag k="sidewalk" v="both"/>
+        <tag k="sidewalk:both:surface" v="paving_stones"/>
+        <tag k="surface" v="asphalt"/>
+    </way>
+
+</osm>

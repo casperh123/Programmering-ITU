@@ -1,0 +1,20 @@
+
+<osm version="0.6" generator="Overpass API 0.7.59 e21c39fe">
+    <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+    <meta osm_base="2023-02-16T09:18:54Z"/>
+
+    <bounds minlat="55.6537000" minlon="12.5702000" maxlat="55.6810000" maxlon="12.6235000"/>
+
+    < id="118735" lat="55.6682382" lon="12.5719326" version="11" timestamp="2021-03-06T13:19:43Z" changeset="100535481" uid="1288" user="Niels Elgaard Larsen"/>
+    <node id="125399" lat="55.6710440" lon="12.5771583" version="8" timestamp="2015-06-24T15:19:58Z" changeset="32185754" uid="19775" user="Spectrokid"/>
+    <node id="125401" lat="55.6739156" lon="12.5830867" version="12" timestamp="2016-05-12T16:13:43Z" changeset="39271658" uid="207581" user="Hjart"/>
+    <node id="125402" lat="55.6743964" lon="12.5854426" version="4" timestamp="2009-01-23T19:05:27Z" changeset="828447" uid="49560" user="sfromis"/>
+    <node id="125403" lat="55.6753314" lon="12.5871789" version="7" timestamp="2021-03-12T06:24:38Z" changeset="100882442" uid="10653025" user="Annobon"/>
+    <node id="125404" lat="55.6809120" lon="12.5848854" version="3" timestamp="2010-12-14T20:14:15Z" changeset="6661999" uid="49777" user="Winbladh"/>
+    <node id="697547" lat="55.6736517" lon="12.5722541" version="7" timestamp="2010-01-03T18:54:57Z" changeset="3531468" uid="185440" user="Claus Hindsgaul">
+        <tag k="highway" v="traffic_signals"/>
+    </node>
+    <node id="697775" lat="55.6824813" lon="12.5708401" version="8" timestamp="2014-09-19T19:01:08Z" changeset="25547314" uid="466535" user="hrmmhahmhm">
+        <tag k="highway" v="traffic_signals"/>
+    </node>
+</osm>

@@ -1,0 +1,46 @@
+<osm version="0.6" generator="Overpass API 0.7.59 e21c39fe">
+    <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+    <meta osm_base="2023-02-16T09:18:54Z"/>
+    <bounds minlat="55.6537000" minlon="12.5702000" maxlat="55.6810000" maxlon="12.6235000"/>
+    <node id="4342157817" lat="55.6593079" lon="12.5874604" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157813" lat="55.6592050" lon="12.5883576" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157806" lat="55.6589092" lon="12.5882235" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157805" lat="55.6588804" lon="12.5881538" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157807" lat="55.6589296" lon="12.5877823" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157808" lat="55.6589984" lon="12.5876052" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157814" lat="55.6592148" lon="12.5872686" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="4342157817" lat="55.6593079" lon="12.5874604" version="1" timestamp="2016-08-09T06:07:42Z" changeset="41338158" uid="207581" user="Hjart"/>
+    <node id="5849799047" lat="55.6592200" lon="12.5879408" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799046" lat="55.6589772" lon="12.5878631" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799045" lat="55.6589515" lon="12.5880964" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799044" lat="55.6591913" lon="12.5881755" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <node id="5849799047" lat="55.6592200" lon="12.5879408" version="1" timestamp="2018-08-22T19:53:08Z" changeset="61900366" uid="100060" user="Troels Arvin"/>
+    <way id="436343091" version="2" timestamp="2019-08-20T10:54:03Z" changeset="73533117" uid="156646" user="archie">
+        <nd ref="4342157817"/>
+        <nd ref="4342157813"/>
+        <nd ref="4342157806"/>
+        <nd ref="4342157805"/>
+        <nd ref="4342157807"/>
+        <nd ref="4342157808"/>
+        <nd ref="4342157814"/>
+        <nd ref="4342157817"/>
+    </way>
+    <way id="618974775" version="3" timestamp="2022-06-09T17:19:40Z" changeset="122176203" uid="394045" user="Chau">
+        <nd ref="5849799047"/>
+        <nd ref="5849799046"/>
+        <nd ref="5849799045"/>
+        <nd ref="5849799044"/>
+        <nd ref="5849799047"/>
+        <tag k="leisure" v="pitch"/>
+        <tag k="lit" v="no"/>
+        <tag k="landuse" v="forest"/>
+        <tag k="surface" v="tartan"/>
+    </way>
+    <relation id="9944173" version="2" timestamp="2022-06-09T17:05:17Z" changeset="122175594" uid="394045" user="Chau">
+        <member type="way" ref="436343091" role="outer"/>
+        <member type="way" ref="618974775" role="inner"/>
+        <tag k="landuse" v="forest"/>
+        <tag k="leaf_type" v="mixed"/>
+        <tag k="type" v="multipolygon"/>
+    </relation>
+</osm>

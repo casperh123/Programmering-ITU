@@ -1,0 +1,29 @@
+<osm version="0.6" generator="Overpass API 0.7.59 e21c39fe">
+    <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+    <meta osm_base="2023-02-16T09:18:54Z"/>
+<bounds minlat="55.6537000" minlon="12.5702000" maxlat="55.6810000" maxlon="12.6235000"/>
+    <node id="340523553" lat="55.6587180" lon="12.6116240" version="9" timestamp="2022-04-18T18:54:26Z" changeset="119874087" uid="8209541" user="autoAWS">
+        <tag k="addr:city" v="København S"/>
+        <tag k="addr:country" v="DK"/>
+        <tag k="addr:housenumber" v="17A"/>
+        <tag k="addr:municipality" v="København"/>
+        <tag k="addr:postcode" v="2300"/>
+        <tag k="addr:street" v="Kirkegårdsvej"/>
+        <tag k="osak:identifier" v="0a3f507a-a6ae-32b8-e044-0003ba298018"/>
+        <tag k="source" v="Danmarks Adresseregister"/>
+    </node>
+    <node id="6314615910" lat="55.6611222" lon="12.6157546" version="2" timestamp="2022-10-23T00:28:32Z" changeset="127940931" uid="1288" user="Niels Elgaard Larsen">
+        <tag k="building" v="service"/>
+        <tag k="check_date" v="2019-03-03"/>
+        <tag k="frequency" v="50"/>
+        <tag k="location" v="indoor"/>
+        <tag k="operator" v="Radius Elnet"/>
+        <tag k="power" v="substation"/>
+        <tag k="ref" v="51207"/>
+        <tag k="ref:sign" v="KB relief"/>
+        <tag k="short_ref" v="1207"/>
+        <tag k="street_cabinet:lock" v="Ruko A2A-1"/>
+        <tag k="substation" v="minor_distribution"/>
+        <tag k="voltage" v="10000;400"/>
+    </node>
+</osm>
