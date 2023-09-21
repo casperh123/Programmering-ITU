@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Controller">
+   <top>
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100" prefWidth="1000.0" style="-fx-background-color: dimgrey;" BorderPane.alignment="CENTER">
+         <ImageView fitHeight="72.0" fitWidth="84.0" layoutX="51.0" layoutY="15.0" onMouseClicked="#setDefault" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="72.0" fitWidth="84.0" layoutX="52.0" layoutY="15.0" onMouseClicked="#setDefault" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Netflix-Symbol.png">
+               </Image>
+            </image>
+            <effect>
+               <Glow level="0.5" />
+            </effect>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      <Button id="searchButton" fx:id="searchButton" layoutX="266.0" layoutY="38.0" mnemonicParsing="false" onAction="#search" onMouseClicked="#search" prefHeight="25.0" prefWidth="52.0" text="Search" />
+      <TextField layoutX="175.0" layoutY="38.0" prefHeight="25.0" prefWidth="91.0" promptText="Media title.." />
+      <ComboBox fx:id="sortByComboBox" layoutX="336.0" layoutY="38.0" prefHeight="25.0" prefWidth="153.0" promptText="Sort by" />
+      <ComboBox fx:id="genreComboBox" layoutX="507.0" layoutY="38.0" prefWidth="150.0" promptText="All genres" />
+      <ComboBox fx:id="mediaComboBox" layoutX="675.0" layoutY="38.0" prefWidth="150.0" promptText="All media" />
+      <Separator layoutX="318.0" layoutY="38.0" prefHeight="25.0" prefWidth="18.0" visible="false" />
+      <Separator layoutX="489.0" layoutY="38.0" prefHeight="25.0" prefWidth="18.0" visible="false" />
+      <Separator layoutX="657.0" layoutY="38.0" prefHeight="25.0" prefWidth="18.0" visible="false" />
+      <ComboBox fx:id="profileComboBox" layoutX="848.0" layoutY="38.0" prefHeight="25.0" prefWidth="110.0" promptText="Profil" />
+   </AnchorPane>
+   </top>
+   <center>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="1000.0" maxWidth="1000.0" prefViewportHeight="600.0" prefViewportWidth="1000.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+         <content>
+         <FlowPane fx:id="mediaPane" alignment="CENTER_LEFT" columnHalignment="CENTER" hgap="10.0" prefWrapLength="1000.0" vgap="25.0">
+               <padding>
+                  <Insets bottom="10.0" left="50.0" top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></FlowPane>
+               </padding></FlowPane>
+         </content>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>
