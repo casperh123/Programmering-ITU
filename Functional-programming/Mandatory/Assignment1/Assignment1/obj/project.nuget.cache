@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ijovOK1gFiPFt3b0rg5WUP5B8qMwvslH0NlCKes4tv+OvbthEW8mUwK6dIeyW0BidO5c+5BfwVAXbG//+VJGZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\caspe\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment1\\Assignment1\\Assignment1.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caspe\\.nuget\\packages\\fsharp.core\\7.0.402\\fsharp.core.7.0.402.nupkg.sha512"
+  ],
+  "logs": []
+}

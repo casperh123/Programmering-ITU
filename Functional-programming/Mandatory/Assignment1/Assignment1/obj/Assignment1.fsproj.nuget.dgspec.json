@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\caspe\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment1\\Assignment1\\Assignment1.fsproj": {}
+  },
+  "projects": {
+    "C:\\Users\\caspe\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment1\\Assignment1\\Assignment1.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\caspe\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment1\\Assignment1\\Assignment1.fsproj",
+        "projectName": "Assignment1",
+        "projectPath": "C:\\Users\\caspe\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment1\\Assignment1\\Assignment1.fsproj",
+        "packagesPath": "C:\\Users\\caspe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caspe\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment1\\Assignment1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caspe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.404\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.402, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
