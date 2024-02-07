@@ -38,7 +38,6 @@
     
     let complexToPair (Complex(a, b)) = (a,b)
 
-    let squareRoot n = n * n
     let (|+|) (Complex(a, b)) (Complex(c, d)) = Complex(a + c, b + d)
     let (|*|) (Complex(a, b)) (Complex(c, d)) = Complex(a*c - b*d, b*c + a*d)
     let (|-|) (Complex(a, b)) (Complex(c, d))= Complex((a + (-c), b + (-d)))
@@ -55,10 +54,13 @@
     
     let implodeRev (cs : char list) = List.fold(fun accumulator char -> System.String(char.ToString()) + accumulator) "" cs
 
-    let toUpper _ = failwith "not implemented"
+    let toUpper (s:string) = implode (List.map (fun a -> System.Char.ToUpper a) (explode1 s))
 
-    let ack _ = failwith "not implemented"
-
+    let rec ack (m:int,n:int) = 
+        match m, n with
+        | m , n when m = 0-> n + 1
+        | m, n when m > 0 && n = 0 -> ack(m - 1, 1)
+        | m, n when m > 0 && n > 0 -> ack(m - 1, ack(m, n - 1))
 
 
     let downto3 _ = failwith "not implemented"
