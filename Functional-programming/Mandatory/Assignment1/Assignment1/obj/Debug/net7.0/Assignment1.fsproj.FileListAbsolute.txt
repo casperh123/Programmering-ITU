@@ -1,0 +1,14 @@
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.deps.json
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.pdb
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/bin/Debug/net7.0/Assignment1.xml
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.fsproj.AssemblyReference.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.AssemblyInfoInputs.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.AssemblyInfo.fs
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.fsproj.CoreCompileInputs.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.sourcelink.json
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/refint/Assignment1.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.xml
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/Assignment1.pdb
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/Debug/net7.0/ref/Assignment1.dll

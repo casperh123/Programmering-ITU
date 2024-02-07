@@ -112,11 +112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/Assignment1.fsproj",
-      "projectName": "Assignment1",
-      "projectPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/Assignment1.fsproj",
+      "projectUniqueName": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment2/Assignment2/Assignment2.fsproj",
+      "projectName": "Assignment2",
+      "projectPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment2/Assignment2/Assignment2.fsproj",
       "packagesPath": "/home/casper/.nuget/packages/",
-      "outputPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment1/Assignment1/obj/",
+      "outputPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment2/Assignment2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/casper/.nuget/NuGet/NuGet.Config"
