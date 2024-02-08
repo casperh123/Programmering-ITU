@@ -42,7 +42,7 @@
     let (|+|) (Complex(a, b)) (Complex(c, d)) = Complex(a + c, b + d)
     let (|*|) (Complex(a, b)) (Complex(c, d)) = Complex(a*c - b*d, b*c + a*d)
     let (|-|) (Complex(a, b)) (Complex(c, d))= Complex((a + (-c), b + (-d)))
-    let (|/|) (Complex(a, b)) (Complex(c, d)) = failwith "not implemented"
+    let (|/|) (Complex(a, b)) (Complex(c, d)) = (a * (c/(c**2 + d**2)), b * ((-d) / (c**2 + d**2)))
 
     let explode1 (s:string) = Seq.toList s
 
