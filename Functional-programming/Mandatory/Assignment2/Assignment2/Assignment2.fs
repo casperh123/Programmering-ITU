@@ -62,8 +62,16 @@
         | m, n when m > 0 && n = 0 -> ack(m - 1, 1)
         | m, n when m > 0 && n > 0 -> ack(m - 1, ack(m, n - 1))
 
-
-    let downto3 _ = failwith "not implemented"
+    let timeArg1 f a =
+        let start = System.DateTime.Now
+        let res = f (a)
+        let finish = System.DateTime.Now
+        (res, finish - start)
+        
+    let rec downto3 f n e=
+        match n with
+        | n when n > 0 -> downto3 f (n - 1) (f n e)
+        | n when n <= 0 -> e
 
     let fac _ = failwith "not implemented"
     let range _ = failwith "not implemented"
