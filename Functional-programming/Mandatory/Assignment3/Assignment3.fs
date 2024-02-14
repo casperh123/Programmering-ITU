@@ -5,7 +5,6 @@
     let rec arithEvalSimple =
        function
        | N n -> n
-       | PV(exp1) -> (arithEvalSimple exp1) * (arithEvalSimple exp1)
        | Add(exp1, exp2) -> (arithEvalSimple exp1) + (arithEvalSimple exp2)
        | Sub(exp1, exp2) -> (arithEvalSimple exp1) - (arithEvalSimple exp2)
        | Mul(exp1, exp2) -> (arithEvalSimple exp1) * (arithEvalSimple exp2)
@@ -14,14 +13,22 @@
        match exp with
        | N n -> n
        | V v -> Map.tryFind v st |> Option.defaultValue 0
-       | Add(exp1, exp2) -> arithEvalState exp1 st + arithEvalState exp2 st
-       | Sub(exp1, exp2) -> arithEvalState exp1 st + arithEvalState exp2 st
-       | Mul(exp1, exp2) -> arithEvalState exp1 st + arithEvalState exp2 st
+       | Add(exp1, exp2) -> (arithEvalState exp1 st) + (arithEvalState exp2 st)
+       | Sub(exp1, exp2) -> (arithEvalState exp1 st) - (arithEvalState exp2 st)
+       | Mul(exp1, exp2) -> (arithEvalState exp1 st) * (arithEvalState exp2 st)
               
-              
-    let hello = [] // Insert your version of hello here from the last assignment
+    let hello : word = [('h', 4); ('e',1); ('l',1); ('l',1); ('o',1)] // Insert your version of hello here from the last assignment
 
-    let arithEval _ = failwith "not implemented"
+    let rec arithEval (exp:aExp) (w :word) st =
+       match exp with
+       | N n -> n
+       | V v -> Map.tryFind v st |> Option.defaultValue 0
+       | WL -> List.length w
+       | PV a -> snd (w.Item (arithEval a w st))
+       | Add(exp1, exp2) -> arithEval exp1 w st + arithEval exp2 w st
+       | Sub(exp1, exp2) -> arithEval exp1 w st - arithEval exp2 w st
+       | Mul(exp1, exp2) -> arithEval exp1 w st * arithEval exp2 w st
+              
 
     type cExp =
        | C  of char      (* Character value *)
@@ -69,7 +76,7 @@
 
     let evalStmnt _ = failwith "not implemented"
 
-    let stmntToSquareFun _ = failwith "not implemented"
+    let stmntToSquareFun (_: stmnt) : squareFun = fun _ _ _ -> 0
     
     let singleLetterScore : squareFun = stmntToSquareFun (Ass ("_result_", arithSingleLetterScore))
     let doubleLetterScore : squareFun = stmntToSquareFun (Ass ("_result_", arithDoubleLetterScore))
