@@ -41,7 +41,11 @@
     let (|+|) (Complex(a, b)) (Complex(c, d)) = Complex(a + c, b + d)
     let (|*|) (Complex(a, b)) (Complex(c, d)) = Complex(a*c - b*d, b*c + a*d)
     let (|-|) (Complex(a, b)) (Complex(c, d))= Complex((a + (-c), b + (-d)))
-    let (|/|) (Complex(a, b)) (Complex(c, d)) = (a * (c/(c**2 + d**2)), b * ((-d) / (c**2 + d**2)))
+    let (|/|) (Complex(a, b)) (Complex(c, d)) =
+        let divisor = c**2 + d**2
+        let x = (a * c + b * d) / divisor
+        let y = (b * c - a * d) / divisor
+        Complex(x, y)
 
     let explode1 (s:string) = Seq.toList s
 

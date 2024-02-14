@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VLC4rrlYdw49o66q2nHEGg/5IrB8BCZ1wY3fWTaBdUokvdF/UYxee5ElXIkuzslvTunTP/bSgk+JjUWSRfBXrA==",
+  "success": true,
+  "projectFilePath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/Assignment3.fsproj",
+  "expectedPackageFiles": [
+    "/home/casper/.nuget/packages/fsharp.core/8.0.101/fsharp.core.8.0.101.nupkg.sha512"
+  ],
+  "logs": []
+}
