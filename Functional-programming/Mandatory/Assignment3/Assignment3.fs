@@ -39,19 +39,11 @@
 
     let rec charEval (exp:cExp) (w:word) st =
        match exp with
-       | C c -> System.Char.ToUpper c
-       | ToUpper exp ->
-          match exp with
-          | C c -> System.Char.ToUpper c
-          | exp -> charEval exp w st
-       | ToLower exp ->
-          match exp with
-          | C c -> System.Char.ToLower c
-          | exp -> charEval exp w st
-       | CV n ->
-          let index = arithEval n w st
-          let (char, _) = w.[index]
-          charEval (C char) w st
+       | C c -> c
+       | CV n -> System.Char.ToUpper (fst (w.Item (arithEval n w st)))
+       | ToLower exp -> System.Char.ToLower (charEval exp w st)
+       | ToUpper exp -> System.Char.ToUpper (charEval exp w st)
+       
 
     type bExp =             
        | TT                   (* true *)
@@ -78,13 +70,21 @@
     let (.>=.) a b = ~~(a .<. b)                (* numeric greater than or equal to *)
     let (.>.) a b = ~~(a .=. b) .&&. (a .>=. b) (* numeric greater than *)
 
-    let rec boolEval (exp: bExp) (w:word) (st:Map<string, int>) =
+    let rec boolEval (exp:bExp) (w:word) (st:Map<string,int>) =
        match exp with
        | TT -> true
-       | FF -> false 
-       | AEq (exp1, exp2) -> boolEval(exp1 w st) ==  boolEval(exp2 w st)
-       | ALt (exp1, exp2) -> boolEval(exp1 w st) > boolEval(exp2 w st)
-       | Not bExp ->
+       | FF -> false
+       | AEq (exp1, exp2) -> arithEval exp1 w st = arithEval exp2 w st
+       | ALt (exp1, exp2) -> arithEval exp1 w st < arithEval exp2 w st
+       | Not exp -> not (boolEval exp w st)
+       | Conj(exp1, exp2) -> boolEval exp1 w st && boolEval exp2 w st
+       | IsDigit exp -> System.Char.IsDigit (charEval exp w st)
+       | IsLetter exp -> System.Char.IsLetter (charEval exp w st)
+       | IsVowel exp ->
+          let char = System.Char.ToUpper (charEval exp w st)
+          match char with
+          | 'A' | 'E' | 'I' | 'O' | 'U' -> true
+          | _ -> false
         
     let isConsonant _ = failwith "not implemented"
 
