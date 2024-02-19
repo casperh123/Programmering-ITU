@@ -20,7 +20,7 @@
           "net7.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/sdk/8.0.101/FSharp/library-packs": {},
+          "/usr/lib/dotnet/sdk/8.0.102/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

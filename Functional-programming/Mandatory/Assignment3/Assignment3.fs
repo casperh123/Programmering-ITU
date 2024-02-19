@@ -30,13 +30,28 @@
        | Mul(exp1, exp2) -> arithEval exp1 w st * arithEval exp2 w st
               
 
+    
     type cExp =
        | C  of char      (* Character value *)
        | ToUpper of cExp (* Converts lower case to upper case character, non-characters unchanged *)
        | ToLower of cExp (* Converts upper case to lower case character, non characters unchanged *)
        | CV of aExp      (* Character lookup at word index *)
 
-    let charEval _ = failwith "not implemented"
+    let rec charEval (exp:cExp) (w:word) st =
+       match exp with
+       | C c -> System.Char.ToUpper c
+       | ToUpper exp ->
+          match exp with
+          | C c -> System.Char.ToUpper c
+          | exp -> charEval exp w st
+       | ToLower exp ->
+          match exp with
+          | C c -> System.Char.ToLower c
+          | exp -> charEval exp w st
+       | CV n ->
+          let index = arithEval n w st
+          let (char, _) = w.[index]
+          charEval (C char) w st
 
     type bExp =             
        | TT                   (* true *)
@@ -63,7 +78,13 @@
     let (.>=.) a b = ~~(a .<. b)                (* numeric greater than or equal to *)
     let (.>.) a b = ~~(a .=. b) .&&. (a .>=. b) (* numeric greater than *)
 
-    let boolEval _ = failwith "not implemented"
+    let rec boolEval (exp: bExp) (w:word) (st:Map<string, int>) =
+       match exp with
+       | TT -> true
+       | FF -> false 
+       | AEq (exp1, exp2) -> boolEval(exp1 w st) ==  boolEval(exp2 w st)
+       | ALt (exp1, exp2) -> boolEval(exp1 w st) > boolEval(exp2 w st)
+       | Not bExp ->
         
     let isConsonant _ = failwith "not implemented"
 
