@@ -17,7 +17,7 @@
        | Sub(exp1, exp2) -> (arithEvalState exp1 st) - (arithEvalState exp2 st)
        | Mul(exp1, exp2) -> (arithEvalState exp1 st) * (arithEvalState exp2 st)
               
-    let hello : word = [('h', 4); ('e',1); ('l',1); ('l',1); ('o',1)] // Insert your version of hello here from the last assignment
+    let hello : word = [('H', 4); ('E',1); ('L',1); ('L',1); ('O',1)] // Insert your version of hello here from the last assignment
 
     let rec arithEval (exp:aExp) (w :word) st =
        match exp with

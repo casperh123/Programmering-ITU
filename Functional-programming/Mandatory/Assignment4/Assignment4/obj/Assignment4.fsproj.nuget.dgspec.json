@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/Assignment3.fsproj": {}
+    "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment4/Assignment4/Assignment4.fsproj": {}
   },
   "projects": {
-    "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/Assignment3.fsproj": {
+    "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment4/Assignment4/Assignment4.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/Assignment3.fsproj",
-        "projectName": "Assignment3",
-        "projectPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/Assignment3.fsproj",
+        "projectUniqueName": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment4/Assignment4/Assignment4.fsproj",
+        "projectName": "Assignment4",
+        "projectPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment4/Assignment4/Assignment4.fsproj",
         "packagesPath": "/home/casper/.nuget/packages/",
-        "outputPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/obj/",
+        "outputPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment4/Assignment4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/casper/.nuget/NuGet/NuGet.Config"

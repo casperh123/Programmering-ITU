@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3763e24b-ccaf-4a98-b845-e4923c53e7aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Assignment3/Assignment3.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/Assignment3.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/Assignment3.fsproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/Assignment3.fsproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/Assignment3.fsproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/Assignment3.fsproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.AssemblyInfo.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.AssemblyInfo.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/Debug/net7.0/Assignment3.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2cflGedRLdxoJGDlqnDFr5v99pt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment4",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/casper/.config/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/home/casper/.config/JetBrains/Rider2023.3/resharper-host/SourcesCache",
+      "/home/casper/.local/share/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3763e24b-ccaf-4a98-b845-e4923c53e7aa" name="Changes" comment="" />
+      <created>1708510419405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708510419405</updated>
+      <workItem from="1708510420483" duration="221000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
