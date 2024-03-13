@@ -20,10 +20,19 @@ let foldBack f lst acc =
 
 (* Exercise 5.4 *)
 
-let factA _ = failwith "not implemented"
-
-let factC _ = failwith "not implemented"
-
+let factA x =
+    let rec aux acc =
+        function
+        | 0 -> acc
+        | x -> aux (x * acc) (x - 1)
+    aux 1 x
+    
+let factC x =
+    let rec factB aux c =
+        match aux with
+        | 0 -> c 1
+        | n -> factB (n - 1) (fun r -> c (n * r))
+    factB x id
 
 (* TODO: *)
 (* Compare the running time between factA and factC. Which solution is faster and why? 
