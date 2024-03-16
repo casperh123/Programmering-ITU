@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "FSharp.Core/7.0.0": {
+      "FSharp.Core/7.0.300": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -59,14 +59,15 @@
     }
   },
   "libraries": {
-    "FSharp.Core/7.0.0": {
-      "sha512": "+bBo89CyfHBTVKIUC95ANpV9o7UuBOhXjQcDM75wGT9+YTwROhpX/TpKibDMXl3tmUJWxZI6O+eHxeCK1OEYaA==",
+    "FSharp.Core/7.0.300": {
+      "sha512": "8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
       "type": "package",
-      "path": "fsharp.core/7.0.0",
+      "path": "fsharp.core/7.0.300",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "Icon.png",
-        "fsharp.core.7.0.0.nupkg.sha512",
+        "fsharp.core.7.0.300.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -103,29 +104,29 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "FSharp.Core >= 7.0.0"
+      "FSharp.Core >= 7.0.300"
     ]
   },
   "packageFolders": {
-    "/home/casper/.nuget/packages/": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment2/Assignment2/Assignment2.fsproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment2\\Assignment2\\Assignment2.fsproj",
       "projectName": "Assignment2",
-      "projectPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment2/Assignment2/Assignment2.fsproj",
-      "packagesPath": "/home/casper/.nuget/packages/",
-      "outputPath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment2/Assignment2/obj/",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment2\\Assignment2\\Assignment2.fsproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Programmering-ITU\\Functional-programming\\Mandatory\\Assignment2\\Assignment2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/casper/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/sdk/7.0.115/FSharp/library-packs": {},
+        "C:\\Users\\Administrator\\.dotnet\\sdk\\7.0.306\\FSharp\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -142,7 +143,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[7.0.0, )",
+            "version": "[7.0.300, )",
             "generatePathProperty": true
           }
         },
@@ -162,7 +163,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Administrator\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
