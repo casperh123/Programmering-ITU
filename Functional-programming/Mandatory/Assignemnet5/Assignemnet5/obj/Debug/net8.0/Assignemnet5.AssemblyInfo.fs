@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("Assignemnet5")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2195b2391acc2043b511fdfbcab63c0001e51a37")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8a09db84486a1fbbf6bfabdb98a62a97a8eb3df")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("Assignemnet5")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("Assignemnet5")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

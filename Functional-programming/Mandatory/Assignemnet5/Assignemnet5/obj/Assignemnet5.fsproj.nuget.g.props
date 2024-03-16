@@ -24,7 +24,7 @@
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/home/casper/.nuget/packages/xunit.analyzers/1.0.0</Pkgxunit_analyzers>
     <Pkgxunit Condition=" '$(Pkgxunit)' == '' ">/home/casper/.nuget/packages/xunit/2.4.2</Pkgxunit>
     <PkgMicrosoft_NET_Test_Sdk Condition=" '$(PkgMicrosoft_NET_Test_Sdk)' == '' ">/home/casper/.nuget/packages/microsoft.net.test.sdk/17.6.0</PkgMicrosoft_NET_Test_Sdk>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/casper/.nuget/packages/fsharp.core/8.0.101</PkgFSharp_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/casper/.nuget/packages/fsharp.core/8.0.102</PkgFSharp_Core>
     <Pkgcoverlet_collector Condition=" '$(Pkgcoverlet_collector)' == '' ">/home/casper/.nuget/packages/coverlet.collector/6.0.0</Pkgcoverlet_collector>
   </PropertyGroup>
 </Project>
