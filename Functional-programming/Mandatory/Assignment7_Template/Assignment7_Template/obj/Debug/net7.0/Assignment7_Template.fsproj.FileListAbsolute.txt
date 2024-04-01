@@ -1,0 +1,63 @@
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.fsproj.AssemblyReference.cache
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.AssemblyInfoInputs.cache
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.AssemblyInfo.fs
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.fsproj.CoreCompileInputs.cache
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.deps.json
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.runtimeconfig.json
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.pdb
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/FParsec.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/FParsecCS.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/FSharp.Core.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/cs/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/de/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/es/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/fr/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/it/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/ja/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/ko/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/pl/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/pt-BR/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/ru/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/tr/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/zh-Hans/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/zh-Hant/FSharp.Core.resources.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.fsproj.CopyComplete
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/refint/Assignment7_Template.dll
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.pdb
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.genruntimeconfig.cache
+/Users/jebe/Library/CloudStorage/OneDrive-ITU/teaching/courses/FP2023/Lecture 7/Assignment 7/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/ref/Assignment7_Template.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.fsproj.AssemblyReference.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.AssemblyInfoInputs.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.AssemblyInfo.fs
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.fsproj.CoreCompileInputs.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.sourcelink.json
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/refint/Assignment7_Template.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.pdb
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.deps.json
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.runtimeconfig.json
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/Assignment7_Template.pdb
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/FParsec.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/FParsecCS.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/FSharp.Core.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/cs/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/de/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/es/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/fr/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/it/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/ja/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/ko/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/pl/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/pt-BR/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/ru/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/tr/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/zh-Hans/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/bin/Debug/net7.0/zh-Hant/FSharp.Core.resources.dll
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.fsproj.CopyComplete
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/Assignment7_Template.genruntimeconfig.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/obj/Debug/net7.0/ref/Assignment7_Template.dll

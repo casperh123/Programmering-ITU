@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "jPll2+bDTCcCODH+lKt0uRHNiQ+N4dJPl8Ffv2uIG1aqJNVHvtco2vShXiWYCZ4ptOz//sYQUEnkE7YKivO0lg==",
+  "success": true,
+  "projectFilePath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment7_Template/Assignment7_Template/Assignment7_Template.fsproj",
+  "expectedPackageFiles": [
+    "/home/casper/.nuget/packages/fparsec/1.1.1/fparsec.1.1.1.nupkg.sha512",
+    "/home/casper/.nuget/packages/fsharp.core/8.0.102/fsharp.core.8.0.102.nupkg.sha512",
+    "/home/casper/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.17/microsoft.netcore.app.host.linux-x64.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
