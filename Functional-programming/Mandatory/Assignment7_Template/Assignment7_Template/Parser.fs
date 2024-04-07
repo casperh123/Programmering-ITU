@@ -42,32 +42,41 @@
     let spaces         = many whitespaceChar
     let spaces1        = many1 whitespaceChar
 
-    let (.>*>.) p1 p2 = p1 .>> spaces >>. p2
+    let (.>*>.) p1 p2 = p1 .>> spaces .>>. p2
         
-    let (.>*>) p1 p2  = p1 .>>. spaces .>> p2
-    let (>*>.) p1 p2  = p1 >>. spaces .>>. p2
+    let (.>*>) p1 p2  = p1 .>> spaces .>> p2
+    let (>*>.) p1 p2  = p1 .>>. spaces >>. p2
     
-    let parenthesise p = pchar '(' >>. spaces >>. p .>> spaces .>> pchar ')'
+    let parenthesise p = pchar '(' >*>. p .>*> pchar ')'
 
-    let pid = pstring "not implemented"
-
+    let pid =
+        let parsePid = (pletter <|> pchar '_') .>>. many (palphanumeric <|> pchar '_')
+        let combineChars (firstChar, chars) =
+            string firstChar + String.concat "" (List.map string chars)
+        parsePid |>> combineChars
     
-    let unop _ = 
-    let binop _ = 
+    let unop op p1 = op >*>. p1
+    let binop op p1 p2 = p1 .>*> op >*>. p2
 
     let TermParse, tref = createParserForwardedToRef<aExp>()
     let ProdParse, pref = createParserForwardedToRef<aExp>()
     let AtomParse, aref = createParserForwardedToRef<aExp>()
 
     let AddParse = binop (pchar '+') ProdParse TermParse |>> Add <?> "Add"
-    do tref := choice [AddParse; ProdParse]
+    let SubParse = binop (pchar '-') ProdParse TermParse |>> Sub <?> "Sub"
+    do tref := choice [AddParse; SubParse; ProdParse]
 
     let MulParse = binop (pchar '*') AtomParse ProdParse |>> Mul <?> "Mul"
-    do pref := choice [MulParse; AtomParse]
-
+    let DivParse = binop (pchar '/') AtomParse ProdParse |>> Div <?> "Sub"
+    let ModuloParse = binop (pchar '%') AtomParse ProdParse |>> Mod <?> "Mod"
+    do pref := choice [MulParse; DivParse; ModuloParse; AtomParse]
+ 
     let NParse   = pint32 |>> N <?> "Int"
     let ParParse = parenthesise TermParse
-    do aref := choice [NParse; ParParse]
+    
+    let NegParse = unop (pchar '-') AtomParse |>> (fun x -> Mul(N (-1), x))
+    let PointValueParse = unop pPointValue (parenthesise TermParse) |>> PV
+    do aref := choice [NParse; NegParse; PointValueParse; ParParse]
 
     let AexpParse = TermParse 
 
