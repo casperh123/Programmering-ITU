@@ -1,5 +1,6 @@
 ﻿module ImpParser
 
+    open System
     open Eval
     open FParsec.CharParsers
     open Types
@@ -35,12 +36,12 @@
     let pdo       = pstring "do"
     let pdeclare  = pstring "declare"
 
-    let whitespaceChar = satisfy System.Char.IsWhiteSpace
-    let pletter = satisfy System.Char.IsLetter
-    let palphanumeric  = satisfy System.Char.IsLetterOrDigit
+    let whitespaceChar = satisfy System.Char.IsWhiteSpace <?> "whitespace"
+    let pletter = satisfy System.Char.IsLetter <?> "letter"
+    let palphanumeric  = satisfy System.Char.IsLetterOrDigit <?> "alphanumeric"
 
-    let spaces         = many whitespaceChar
-    let spaces1        = many1 whitespaceChar
+    let spaces         = many whitespaceChar <?> "space"
+    let spaces1        = many1 whitespaceChar <?> "space1"
 
     let (.>*>.) p1 p2 = p1 .>> spaces .>>. p2
         
@@ -56,12 +57,13 @@
         parsePid |>> combineChars
     
     let unop op p1 = op >*>. p1
-    let binop op p1 p2 = p1 .>*> op >*>. p2
+    let binop op p1 p2 = p1 .>*> op .>*>. p2
 
     let TermParse, tref = createParserForwardedToRef<aExp>()
     let ProdParse, pref = createParserForwardedToRef<aExp>()
     let AtomParse, aref = createParserForwardedToRef<aExp>()
-
+    let CharParse, cref = createParserForwardedToRef<cExp>()
+    
     let AddParse = binop (pchar '+') ProdParse TermParse |>> Add <?> "Add"
     let SubParse = binop (pchar '-') ProdParse TermParse |>> Sub <?> "Sub"
     do tref := choice [AddParse; SubParse; ProdParse]
@@ -74,13 +76,22 @@
     let NParse   = pint32 |>> N <?> "Int"
     let ParParse = parenthesise TermParse
     
-    let NegParse = unop (pchar '-') AtomParse |>> (fun x -> Mul(N (-1), x))
-    let PointValueParse = unop pPointValue (parenthesise TermParse) |>> PV
-    do aref := choice [NParse; NegParse; PointValueParse; ParParse]
+    let NegParse = unop (pchar '-') AtomParse |>> (fun x -> Mul(N (-1), x)) <?> "Negation"
+    let PointValueParse = unop pPointValue (parenthesise TermParse) |>> PV <?> "PointValue"
+    let VarParse = pid |>> V <?> "Var"
+    let CharToIntParse = unop pCharToInt (parenthesise CharParse) |>> CharToInt <?> "CharToInt"
+    do aref := choice [NegParse; CharToIntParse; PointValueParse; ParParse; NParse; VarParse]
 
-    let AexpParse = TermParse 
-
-    let CexpParse = pstring "not implemented"
+    let AexpParse = TermParse
+    
+    let CharEncasedParse = pchar '\'' >>. anyChar .>> pchar '\'' |>> C <?> "Character"
+    let CharValueParse = unop pCharValue (parenthesise TermParse) |>> CV <?> "CharValue"
+    let ToUpperParse = unop pToUpper (parenthesise CharParse) |>> ToUpper <?> "ToUpper"
+    let ToLowerParse = unop pToLower (parenthesise CharParse) |>> ToLower <?> "ToLower"
+    let IntToCharParse = unop pIntToChar (parenthesise TermParse) |>> IntToChar <?> "CharToInt"
+    do cref := choice [CharEncasedParse; CharValueParse; ToUpperParse; ToLowerParse; IntToCharParse]
+    
+    let CexpParse = CharParse
 
     let BexpParse = pstring "not implemented"
 
