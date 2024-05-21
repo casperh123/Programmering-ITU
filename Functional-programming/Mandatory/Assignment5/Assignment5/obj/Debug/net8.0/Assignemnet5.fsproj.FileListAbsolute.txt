@@ -1,0 +1,5 @@
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment5/Assignemnet5/obj/Debug/net8.0/Assignemnet5.fsproj.AssemblyReference.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment5/Assignemnet5/obj/Debug/net8.0/Assignemnet5.AssemblyInfoInputs.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment5/Assignemnet5/obj/Debug/net8.0/Assignemnet5.AssemblyInfo.fs
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment5/Assignemnet5/obj/Debug/net8.0/Assignemnet5.fsproj.CoreCompileInputs.cache
+/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment5/Assignemnet5/obj/Debug/net8.0/Assignemnet5.sourcelink.json

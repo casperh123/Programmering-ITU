@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "FSharp.Core/8.0.101": {
+      "FSharp.Core/8.0.102": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -59,14 +59,14 @@
     }
   },
   "libraries": {
-    "FSharp.Core/8.0.101": {
-      "sha512": "q3EhUGMYzUZS+YVzrE9Dh+Sqmx+CWFJzIVaYac4QBqID9MnRZNZpdatu/ZKZ7h4ZAa4QnRr12quY3M9aBp5U5g==",
+    "FSharp.Core/8.0.102": {
+      "sha512": "yaR6qQo2ZIf1B39FzWp0JY9+s7DdvXvkRsPIsWF+1cHLB3rEUWB2/CGWdssXy8SHcWVRgz9Bq9rmFRFsV6HJtw==",
       "type": "package",
-      "path": "fsharp.core/8.0.101",
+      "path": "fsharp.core/8.0.102",
       "files": [
         ".nupkg.metadata",
         "Icon.png",
-        "fsharp.core.8.0.101.nupkg.sha512",
+        "fsharp.core.8.0.102.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -103,7 +103,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "FSharp.Core >= 8.0.101"
+      "FSharp.Core >= 8.0.102"
     ]
   },
   "packageFolders": {
@@ -125,7 +125,7 @@
         "net7.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/sdk/8.0.102/FSharp/library-packs": {},
+        "/usr/lib/dotnet/sdk/8.0.103/FSharp/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -142,7 +142,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[8.0.101, )",
+            "version": "[8.0.102, )",
             "generatePathProperty": true
           }
         },
@@ -162,7 +162,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }

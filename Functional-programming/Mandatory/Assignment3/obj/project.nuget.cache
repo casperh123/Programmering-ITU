@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5GTIzTF3wyDIfGwtN9T4826cGO1b6SlI8pdvMkD1LLJCvNJSGtvtSfClOhAM2edqfFa5IeO0eGoluTv3w6D7OA==",
+  "dgSpecHash": "0Wtox16cp6f5/YPsc1PjmUjEX0FA9QJ2WtRMP3nKYRrYO2/wSt5ekHj8PeO9aZFmK0ADkpMn71LBblm4GBmp9g==",
   "success": true,
   "projectFilePath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment3/Assignment3.fsproj",
   "expectedPackageFiles": [
-    "/home/casper/.nuget/packages/fsharp.core/8.0.101/fsharp.core.8.0.101.nupkg.sha512"
+    "/home/casper/.nuget/packages/fsharp.core/8.0.102/fsharp.core.8.0.102.nupkg.sha512"
   ],
   "logs": []
 }
