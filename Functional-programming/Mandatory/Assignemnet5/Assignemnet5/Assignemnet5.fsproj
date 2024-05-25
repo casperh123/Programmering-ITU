@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Assignemt5.fs" />
+        <Compile Include="Assignment5.fs" />
     </ItemGroup>
 
     <ItemGroup>
