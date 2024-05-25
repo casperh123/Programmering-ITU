@@ -104,19 +104,50 @@
     
     Q: What are the types of functions foo, bar, and baz?
 
-    A: <Your answer goes here>
+    A:
 
+    The type of foo is 'a list -> 'a list -> 'a list option
+    The type of bar is 'a list -> 'a list -> 'a list
+    The type of bas is string -> string -> string
 
     Q: What do the function foo, bar, and baz do.
        Focus on what they do rather than how they do it.
-
-    A: <Your answer goes here>
+       
+      A:
+       foo checks wether or not ys is a prefix of xs. If ys is a prefix of xs, then remainder of xs after the prefix ys is returned . 
+       If ys is not a prefix of xs, then it returns None.
+       
+       bar checks wether or not ys is in xs. If ys is in xs, as indicated by the matchcase Some zs,
+       then the rest of xs without ys prefixed, zs, is checked for having ys as a prefix recursively, until this is no longer the case.
+       If ys is not a prefix to xs, then the first element of the array xs, x, is prepended to the result of the recursive function.
+       This will result in an array, bar xs ys, that does not contain any occurrences of ys.  
+       
+      baz removes any occurences of the string b from string a.
+      string a and string b are converted to char lists, and then occurences of b are removed from a.
+      The result of this is then converted back to a string. 
+    
     
     Q: What would be appropriate names for functions 
-       foo, bar, and baz?
+       foo could be called removePrefix.
+       bar could be stripAllOccurences.
+       baz could be called stripSubstring.
 
     A: <Your answer goes here>
         
+        [for c in a -> c]
+        has the type char list
+        converts the string a to a char list.
+        
+        [for c in b -> c]
+        has the type char list
+        converts the string b to a chat list.
+        
+        List.fold (fun acc c -> acc + string c) ""
+        has the type char list -> string
+        It converts the char list back to a string.
+        
+        The |> is the forward pipe operator. It takes the result of the expression to it's left and passes it as an
+        argument to the function on its right.
     *)
         
 
@@ -144,7 +175,10 @@
 
 (* Question 2.3: No recursion *) 
 
-    let foo2 _ = failwith "not implemented"
+    let foo2 xs ys =
+        match List.splitAt (List.length ys) xs with
+        | (prefix, remainder) when prefix = ys -> Some remainder
+        | _ -> None
 
 (* Question 2.4 *)
 
@@ -161,11 +195,39 @@
        that function immediately.
 
     A: <Your answer goes here>
+        bar [1,2,3,4] [1]
+        --> 2 :: bar [3,4] [1]
+        --> 2 :: (3 :: bar [4] [1])
+        --> 2 :: (3 :: (4 :: bar [] [1]))
+        --> 2 :: (3 :: (4 :: []))
+        --> 2 :: (3 :: [4])
+        --> 2 :: [3, 4]
+        --> [2, 3, 4]
 
+        
+        
+        This function is not tail recursive because after each recursive call to bar, there are still pending operations that need to be evaluated. Specifically, the recursive calls are followed by cons operations (::) that combine the results of the recursive calls with the current element.
+
+In a tail-recursive function, the result of the recursive call is directly returned without any further computation. However, in bar, the recursive call does not immediately compute the final result; instead, it waits until the base case is reached, and then combines the results step-by-step as the call stack unwinds.
+
+The function must maintain the state of each intermediate computation, which prevents the compiler from optimizing the recursion into a loop. This need for retaining intermediate states and performing additional operations after the recursive calls clearly demonstrates that bar is not tail recursive.
     *)
 (* Question 2.5 *)
+    
+    let rec barMannes xs ys =
+        match foo xs ys with
+        | Some zs -> bar zs ys
+        | None -> match xs with
+                  | [] -> []
+                  | x :: xs' -> x :: (bar xs' ys)  
 
-    let barTail _ = failwith "not implemented"
+    let rec barTail xs ys k =
+        match foo xs ys with
+        | Some zs -> barTail zs ys k
+        | None -> match xs with
+                  | [] -> []
+                  | x :: xs' -> barTail xs' ys (fun result -> k (x :: result))
+           
 
 (* 3: Collatz Conjecture *)
 
