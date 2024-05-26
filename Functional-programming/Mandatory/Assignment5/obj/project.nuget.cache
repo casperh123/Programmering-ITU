@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XdfZj5ppp/7yEqiFjbnMmfgIvdcQq4rbmKi5JKm64nM/8a9qsw6ALBwZCvf2tQWzYTusxbd/RXyIjiGg/UnG3g==",
+  "success": true,
+  "projectFilePath": "/home/casper/GitHub/Programmering-ITU/Functional-programming/Mandatory/Assignment5/Assignment5.fsproj",
+  "expectedPackageFiles": [
+    "/home/casper/.nuget/packages/fsharp.core/8.0.102/fsharp.core.8.0.102.nupkg.sha512"
+  ],
+  "logs": []
+}
