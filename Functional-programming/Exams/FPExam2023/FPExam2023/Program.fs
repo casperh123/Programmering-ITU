@@ -52,6 +52,13 @@ let testQ3 () =
     printfn "Testing Question 3"
     // place debug prints for Q3 here
     ()
+    
+    printfn "%A" (collatz 1)
+    printfn "%A" (collatz 2)
+    printfn "%A" (collatz 3)
+    printfn "%A" (collatz 42)
+    printfn "%A" (collatz 1000)
+
 
 let testQ4 () =
     printfn "Testing Question 4"

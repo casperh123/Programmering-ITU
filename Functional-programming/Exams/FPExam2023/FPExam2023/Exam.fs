@@ -233,11 +233,25 @@ The function must maintain the state of each intermediate computation, which pre
 
 (* Question 3.1: Collatz sequences *)
 
-    let collatz _ = failwith "not implemented"
+    let collatz x =
+        let rec aux x acc =
+            match x with
+            | x when x < 0 -> failwith $"Non positive number: {x}"
+            | _ -> match x with
+                    | 1 -> List.rev (1::acc)
+                    | x when (x % 2) = 0 -> aux (x/2) (x::acc) 
+                    | x when (x % 2) = 1 -> aux (3*x + 1) (x::acc)
+        aux x []
 
 (* Question 3.2: Even and odd Collatz sequence elements *)
 
-    let evenOddCollatz _ = failwith "not implemented"
+    let evenOddCollatz x =
+        let rec aux collatz even odd =
+            match collatz with
+            | [] -> (even, odd)
+            | x::xs when (x % 2) = 0 -> aux xs (even + 1) odd
+            | x::xs when (x % 2) = 1 ->  aux xs even (odd + 1)
+        aux (collatz x) 0 0
 
 (* Question 3.3: Maximum length Collatz Sequence *)
   
