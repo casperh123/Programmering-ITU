@@ -1,4 +1,9 @@
 ﻿module Exam2023
+
+    open System.Linq
+    open System.Linq.Expressions
+    open System.Threading.Tasks
+
 (* If you are importing this into F# interactive then comment out
    the line above and remove the comment for the line bellow.
 
@@ -255,14 +260,52 @@ The function must maintain the state of each intermediate computation, which pre
 
 (* Question 3.3: Maximum length Collatz Sequence *)
   
-    let maxCollatz _ = failwith "not implemented"
+    let maxCollatz (x:int) (y:int) =
+        let rec aux currentX endY currentMax maxLengthX =
+            match currentX <= endY with
+            | false -> (maxLengthX, currentMax)
+            | true ->
+                let sequenceLength = List.length <| collatz currentX
+                let (newMax, newMaxX) =
+                    match sequenceLength > currentMax with
+                    | true -> (sequenceLength, currentX)
+                    | false -> (currentMax, maxLengthX)
+                aux (currentX + 1) endY newMax newMaxX
+        aux x y 0 x
 
 (* Question 3.4: Collecting by length *)
-    let collect _ = failwith "not implemented"
-    
+    let collect (x:int) (y:int) =
+        let rec processNumber currentX map =
+            let sequenceLength = List.length (collatz currentX)
+            let updatedMap =
+                match Map.tryFind sequenceLength map with
+                | Some set -> map.Add(sequenceLength, Set.add currentX set)
+                | None -> map.Add(sequenceLength, Set.ofList [currentX])
+            buildMap (currentX + 1) updatedMap
+        and buildMap currentX map =
+            match currentX > y with
+            | true -> map
+            | false -> processNumber currentX map
+        buildMap x Map.empty
+        
+        
 (* Question 3.5: Parallel maximum Collatz sequence *)
 
-    let parallelMaxCollatz _ = failwith "not implemented"
+    let parallelMaxCollatz x y n =
+        
+        let rangeSize = (y - x + 1) / n
+        
+        let tasks = [
+            for i in 0 .. (n - 1) ->
+                let start = x + (i * rangeSize)
+                let endInclusive = start + rangeSize - 1
+                Task.Run(fun () -> maxCollatz start endInclusive)
+        ]
+        
+        let results = Task.WhenAll(tasks).Result
+        
+        results |> Array.maxBy snd |> fst
+           
 
 (* 4: Memory machines *)
 
@@ -297,16 +340,37 @@ The function must maintain the state of each intermediate computation, which pre
 
 (* Question 4.1: Memory blocks *)
 
-    type mem = unit (* replace this entire type with your own *)
-    let emptyMem _ = failwith "not implemented"
-    let lookup _ = failwith "not implemented"
-    let assign _ = failwith "not implemented"
+    type mem = int array
+
+    let emptyMem (x: int) : mem = Array.create x 0
+
+    let lookup (m: mem) (i: int) : int = m[i]
+
+    let assign (m: mem) (i: int) (v: int) : mem =
+        m[i] <- v
+        m
 
 (* Question 4.2: Evaluation *)
 
-    let evalExpr _ = failwith "not implemented"
-    let evalStmnt _ = failwith "not implemented"
-    let evalProg _ = failwith "not implemented"
+    let rec evalExpr (m : mem) (e : expr) : int =
+        match e with
+        | Num x -> x
+        | Lookup e' -> m[evalExpr m e']
+        | Plus (e1, e2) -> evalExpr m e1 + evalExpr m e2
+        | Minus (e1, e2) -> evalExpr m e1 - evalExpr m e2
+        
+        
+    let rec evalStmnt (m : mem) (s: stmnt) : mem =
+        match s with
+        | Assign (e1, e2) -> assign m (evalExpr m e1) (evalExpr m e2)
+        | While (e, p) ->
+            match evalExpr m e with
+            | 0 -> m
+            | _ -> evalProg m (p @ [While(e, p)])
+    and evalProg (m : mem) (p : prog) =
+        match p with
+        | [] -> m
+        | x::xs -> evalProg (evalStmnt m x) xs
     
 (* Question 4.3: State monad *)
     type StateMonad<'a> = SM of (mem -> ('a * mem) option)  
@@ -325,8 +389,20 @@ The function must maintain the state of each intermediate computation, which pre
       
     let evalSM m (SM f) = f m
 
-    let lookup2 _ = failwith "not implemented"
-    let assign2 _ = failwith "not implemented"
+    let lookup2 i =
+        SM (fun mem ->
+            match i with
+            | i when i >= 0 && i < Array.length mem -> Some (mem[i], mem)
+            | _ -> None)
+            
+    let assign2 (i: int) (v: int) : StateMonad<unit> =
+        SM (fun mem ->
+            match i with
+            | i when i >= 0 && i < Array.length mem ->
+                mem[i] <- v
+                Some ((), mem)
+            | _ -> None)
+
 
 (* Question 4.4: State monad evaluation *)
 
@@ -339,20 +415,53 @@ The function must maintain the state of each intermediate computation, which pre
 
     let state = StateBuilder()
 
-    let evalExpr2 _ = failwith "not implemented"
-    let evalStmnt2 _ = failwith "not implemented"
-    let evalProg2 _ = failwith "not implemented"
+    let rec evalExpr2 (e : expr) : StateMonad<int> =
+        match e with
+        | Num x -> ret x
+        | Lookup e' -> evalExpr2 e' >>= lookup2
+        | Plus (e1, e2) ->
+            evalExpr2 e1 >>= fun v1 ->
+            evalExpr2 e2 >>= fun v2 ->
+            ret (v1 + v2)
+        | Minus (e1, e2) ->
+            evalExpr2 e1 >>= fun v1 ->
+            evalExpr2 e2 >>= fun v2 ->
+            ret (v1 - v2)
+                           
+        
+        
+    let rec evalStmnt2 (s : stmnt) : StateMonad<unit> =
+        match s with
+        | Assign (e1, e2) ->
+            evalExpr2 e1 >>= fun v1 ->
+            evalExpr2 e2 >>= fun v2 ->
+            assign2 v1 v2
+        | While (e, p) ->
+            evalExpr2 e >>= function
+            | 0 -> ret ()
+            | _ -> evalProg2 (p @ [While(e, p)]) >>= fun _ -> ret ()
+    and evalProg2 (p : prog) : StateMonad<unit>=
+        match p with
+        | [] -> ret ()
+        | x::xs -> evalStmnt2 x >>>= evalProg2 xs
     
 (* Question 4.5: Parsing *)
     
     open JParsec.TextParser
       
     let ParseExpr, eref = createParserForwardedToRef<expr>()  
-    let ParseAtom, aref = createParserForwardedToRef<expr>()  
-      
-    let parseExpr _ = failwith "not implemented" // Parse addition and minus
+    let ParseAtom, aref = createParserForwardedToRef<expr>()
+    
+    
+    let parseNumber = pint32 |>> Num
+    let parseLookup = between (pchar '[') (pchar ']') ParseExpr |>> Lookup
+  
+
+
+    
+    let parseExpr : Parser<expr> = failwith "not implemented" // Parse addition and minus
           
-    let parseAtom _ = failwith "not implemented" // Parse numbers and lookups
+    let parseAtom = parseNumber <|> parseLookup
 
 //    Uncomment the following two lines once you finish parseExpr and parseAtom             
 //    do aref := parseAtom  
