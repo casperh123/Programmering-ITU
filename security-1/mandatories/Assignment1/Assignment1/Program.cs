@@ -27,7 +27,9 @@ Console.WriteLine(encryptedMessage);
 
 // Intercept 2000, decrypt it, find bobs Private key
 
-int FindKey(int pk)
+// Task 2 
+
+int BruteForceKey(int pk)
 {
     for(int i = 0; i < prime; i++) {
         
@@ -54,7 +56,19 @@ int DecryptMessage(int p, int recieverKey, (int, int) cipherText)
     return decryptedMessage;
 }
 
-int bobKey = FindKey(bobPk);
+int bobKey = BruteForceKey(bobPk);
 
 Console.WriteLine(DecryptMessage( prime, bobKey, encryptedMessage));
+
+//Task 3
+
+(int, int) InterceptAndChangeMessage((int, int) cipherText)
+{
+    return (cipherText.Item1, cipherText.Item2 * 3);
+}
+
+(int, int) ChangedEncryptedMessage = InterceptAndChangeMessage(encryptedMessage);
+int ChangedDecryptedMessage = DecryptMessage(prime, bobKey, ChangedEncryptedMessage);
+
+Console.WriteLine(ChangedDecryptedMessage);
 
