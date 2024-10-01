@@ -68,6 +68,7 @@ Console.WriteLine(DecryptMessage( prime, bobKey, encryptedMessage));
 }
 
 (int, int) ChangedEncryptedMessage = InterceptAndChangeMessage(encryptedMessage);
+
 int ChangedDecryptedMessage = DecryptMessage(prime, bobKey, ChangedEncryptedMessage);
 
 Console.WriteLine(ChangedDecryptedMessage);
