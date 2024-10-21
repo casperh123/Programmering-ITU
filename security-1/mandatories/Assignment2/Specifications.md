@@ -9,4 +9,5 @@
 - Everyone follows protocol
 - Communication over internet
 - Secure Aggregation
-- 
+- Model works on aggregated data
+- Aggregated data is the value of all individual patient data summed
