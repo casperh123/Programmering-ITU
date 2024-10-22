@@ -1,33 +1,44 @@
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.InteropServices.Marshalling;
 using System.Text;
+using System.Text.Json;
 
 namespace Assignment2.Includes;
 
 public class Patient
 {
-    private TcpListener _listener;
-    private IDictionary<int, TcpClient> _clients;
+    private readonly HttpListener _listener;
+    private readonly HttpClient _client;
+
+    private string _name { get; }
+    private int _id { get; }
     private int _port { get; }
     private int _fieldSize = 23;
-
-    public string Name { get; }
-    public int Id { get; }
+    private int _secretsProcessed = 0;
+    private List<Share> _shares = [];
 
     public Patient(string name, int id)
     {
-        Name = name;
-        Id = id;
+        this._name = name;
+        _id = id;
         _port = 3000 + id;
-        _clients = new Dictionary<int, TcpClient>();
-        _listener = new TcpListener(IPAddress.Any, _port);
+        _client = new HttpClient()
+        {
+            Timeout = TimeSpan.FromSeconds(1)
+        };
+        _listener = new HttpListener();
+        
+        _listener.Prefixes.Add($"http://localhost:{_port}/");
 
         _listener.Start();
+
+        Listen();
     }
 
     public async Task InitializeAsync()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 3; i++)
         {
             if (i == (_port - 3000))
             {
@@ -35,42 +46,72 @@ public class Patient
             }
             await Connect(i, 3000 + i);
         }
+        
     }
 
     private async Task Connect(int id, int port)
     {
         bool connected = false;
-        TcpClient client = new TcpClient();
         
         do
-        {
+        { 
             try
             {
-                await client.ConnectAsync(IPAddress.Loopback, port);
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"http://localhost:{port}/");
                 
-                _clients[id] = client;
+                await _client.SendAsync(request);
+                
                 connected = true;
                 
-                Console.WriteLine($"Patient {Id} - Connected to {client.Client.RemoteEndPoint}");
+                Console.WriteLine($"Patient {_id} - Connected to {port}");
             }
-            catch
+            catch (HttpRequestException e)
             {
+                Console.WriteLine($"Patient {_id} - Failed to connect to {port}");
                 await Task.Delay(1000);
             }
         } while (!connected);
     }
 
-    public async Task SendShare(int targetId, int share)
+    private async Task Listen()
     {
-        TcpClient client = _clients[targetId];
-        byte[] messageBuffer = Encoding.UTF8.GetBytes(share.ToString());
-
-        await client.GetStream().WriteAsync(messageBuffer);
+        while (true)
+        {
+            await ProcessRequest();
+        }
     }
 
-    public async Task RecieveShares()
+    private async Task ProcessRequest()
     {
+        HttpListenerContext context = await _listener.GetContextAsync();
+        HttpListenerRequest request = context.Request;
+
+        if (request.HttpMethod is "GET")
+        {
+            HttpListenerResponse response = context.Response;
+            response.StatusCode = (int)HttpStatusCode.OK;
+            byte[] buffer = "Success"u8.ToArray();
+            response.ContentLength64 = buffer.Length;
+            await response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+        }
+        else if(request.HttpMethod is "POST")
+        {
+            using StreamReader reader = new StreamReader(request.InputStream, Encoding.UTF8);
+            string body = await reader.ReadToEndAsync();
+            Share share = JsonSerializer.Deserialize<Share>(body) ?? new Share(-1, -1);
+            _shares.Add(share);
+
+        }
+    }
+
+    private async Task SendShare(int targetId, int share)
+    {
+        HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, $"http://localhost:{3000 + targetId}/")
+        {
+            Content = new StringContent(JsonSerializer.Serialize(share), Encoding.UTF8, "application/json")
+        };
         
+        await _client.SendAsync(request);
     }
     
     protected (Share, Share, Share) GenerateShares(int secret)

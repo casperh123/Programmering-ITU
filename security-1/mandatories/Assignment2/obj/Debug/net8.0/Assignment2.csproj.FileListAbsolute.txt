@@ -1,0 +1,15 @@
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/bin/Debug/net8.0/Assignment2
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/bin/Debug/net8.0/Assignment2.deps.json
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/bin/Debug/net8.0/Assignment2.runtimeconfig.json
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/bin/Debug/net8.0/Assignment2.dll
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/bin/Debug/net8.0/Assignment2.pdb
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.AssemblyInfoInputs.cache
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.AssemblyInfo.cs
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.csproj.CoreCompileInputs.cache
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.sourcelink.json
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.dll
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/refint/Assignment2.dll
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.pdb
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/Assignment2.genruntimeconfig.cache
+/home/casper/GitHub/Programmering-ITU/security-1/mandatories/Assignment2/obj/Debug/net8.0/ref/Assignment2.dll
