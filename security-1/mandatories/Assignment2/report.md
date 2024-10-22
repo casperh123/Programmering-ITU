@@ -6,12 +6,6 @@ the storage, exchange and calculation protocol is GDPR-compliant, secure and res
 
 ## Question 1 - A GDPR compliant protocol
 
-Reflect on this scenario in the context of the GDPR: What are the potential issues 
-in having the hospital store plaintext private data provided by patients even if they have consented 
-to participate on the experiment and have their data processed? 
-Would these issues be solved by removing the patients' names from their data before storing it?  
-What are the remaining risks in using Federated Learning with Secure Aggregation as suggested?
-
 Using and storing data in accordance with GDPR involves adherence to some strict requirements. Since the processing
 of personal information is the main point of our federated learning algorithm, it is limited how much the 
 gathering and processing of personal information can be limited. Thus, we have to process and store the patient data.
@@ -43,3 +37,16 @@ original patient data based on observed exchanges.
 reconstruct individual patient data.
 
 ## Proposed solution
+
+The proposed protocol will consist of secure network communication, and secure three party computation using replicated secret
+sharing, as described but Bernado David in this lecture notes for lecture 6. The communication between parties will be 
+secured using TLS 1.2 or 1.3, depending on which machine is running it.
+
+Using TLS will ensure secure communication between parties. Thus, we need not think about further about attacks, that aim
+to intercept the communication between parties. To protect the data, that is shared internally in the protocol, the 
+replicated string sharing algorithm ensures that no single party piece together the original data, unless two parties are corrupt
+(Which they are not).
+
+
+
+
