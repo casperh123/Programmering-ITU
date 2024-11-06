@@ -1,5 +1,3 @@
-sudo apt install netsh
-
 openssl genpkey -algorithm RSA -out private.key
 
 ## Windows specific ##

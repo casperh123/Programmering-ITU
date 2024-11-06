@@ -47,6 +47,12 @@ to intercept the communication between parties. To protect the data, that is sha
 replicated string sharing algorithm ensures that no single party piece together the original data, unless two parties are corrupt
 (Which they are not).
 
+## SSL and TLS
+
+It can be seen that the communications protocol is secured by SSL using TLS. In the protocol class, we enable the HttpClient
+to use one of two options for SSL authentication, either TLS 1.2 or TLS 1.3, which are both considered safe by modern
+standards.
+
 ## Caveats
 
 HTTPS for HttpListener (Which my implementation relies on) only works for Windows machines. I use Linux. 
