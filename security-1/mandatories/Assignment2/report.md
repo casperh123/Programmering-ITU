@@ -53,17 +53,6 @@ It can be seen that the communications protocol is secured by SSL using TLS. In 
 to use one of two options for SSL authentication, either TLS 1.2 or TLS 1.3, which are both considered safe by modern
 standards.
 
-## Caveats
-
-HTTPS for HttpListener (Which my implementation relies on) only works for Windows machines. I use Linux. 
-This implementation should work on windows, by using the generate-ssl-certs-windows.sh script, and then running the program.
-However, it CANNOT work on Linux.
-
-As cited from a GitHub issue:
-
-    ...the HttpListener class is a legacy component we ported from .NET Framework (which is Windows only) to 
-    .NET Core. But HTTPS functionality is not supported on Linux.
-
 
 
 
