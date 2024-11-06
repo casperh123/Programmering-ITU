@@ -1,5 +1,4 @@
-﻿
-using Assignment2.Includes;
+﻿using Assignment2.Includes;
 
 Patient patient1 = new Patient(0);
 Patient patient2 = new Patient(1);

@@ -47,6 +47,19 @@ to intercept the communication between parties. To protect the data, that is sha
 replicated string sharing algorithm ensures that no single party piece together the original data, unless two parties are corrupt
 (Which they are not).
 
+## Caveats
+
+HTTPS for HttpListener (Which my implementation relies on) only works for Windows machines. I use Linux. 
+This implementation should work on windows, by using the generate-ssl-certs-windows.sh script, and then running the program.
+However, it CANNOT work on Linux.
+
+As cited from a GitHub issue:
+
+    ...the HttpListener class is a legacy component we ported from .NET Framework (which is Windows only) to 
+    .NET Core. But HTTPS functionality is not supported on Linux.
+
+
+
 
 
 

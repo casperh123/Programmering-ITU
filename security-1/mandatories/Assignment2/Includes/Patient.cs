@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace Assignment2.Includes;
 
 public class Patient
@@ -6,6 +8,7 @@ public class Patient
     private int Id { get; }
     private int Secret { get; }
     private readonly int _fieldSize = 23;
+    
     private List<Share> _shares = [];
     private List<Share> _aggregateShares = [];
 
